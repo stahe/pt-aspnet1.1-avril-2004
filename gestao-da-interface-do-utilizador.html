@@ -1017,11 +1017,11 @@
 <p><a id="toc68706466"></a></p>
 <h2 id="51-introducao">5.1. Introdução</h2>
 <p>Na relação cliente-servidor na Web, o cliente envia informações para o servidor na forma de uma sequência de parâmetros [<mark style="background-color: #ffe994">param1=val1&amp;param2=val2&amp;...</mark>]. Nos nossos exemplos anteriores, na maioria das vezes construímos essa sequência manualmente, solicitando URLs do tipo [<mark style="background-color: #ffe994">http://localhost/appli? param1=val1&amp;param2=val2&amp;...</mark>]. Na realidade, a informação que o cliente envia ao servidor provém de formulários que o utilizador preencheu. Neste capítulo, exploramos como construir esses formulários. Apresentamos também a ferramenta WebMatrix, que nos permitirá projetar interfaces de utilizador. A instalação desta ferramenta é descrita nos apêndices.</p>
-<p><a id="toc69183355"></a>
-<a id="toc68706467"></a></p>
+<p><a id="toc68706467"></a>
+<a id="toc69183355"></a></p>
 <h2 id="52-a-linguagem-html">5.2. A linguagem HTML</h2>
-<p><a id="toc69183356"></a>
-<a id="toc68706468"></a></p>
+<p><a id="toc68706468"></a>
+<a id="toc69183356"></a></p>
 <h3 id="521-um-exemplo">5.2.1. Um exemplo</h3>
 <p>Considere o seguinte exemplo, criado com o [Web Matrix], que apresenta:</p>
 <ul>
@@ -1652,8 +1652,8 @@
 </code></pre></div>
 </div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>type=&quot;hidden&quot;</b>: especifica que este é um campo oculto. Um campo oculto faz parte do formulário, mas não é apresentado ao utilizador. No entanto, se o utilizador solicitar ao seu navegador que apresente o código-fonte, verá a presença da tag &lt;input type=&quot;hidden&quot; value=&quot;...&quot;&gt; e, consequentemente, o valor do campo oculto.</div><div style="margin:0 0 0.5em 0"><b>value=&quot;aValue&quot;</b>: valor do campo oculto.</div><div style="margin:0 0 0.5em 0">Qual é o objetivo do campo oculto? Permite que o servidor web retenha informações entre as solicitações de um cliente. Considere uma aplicação de compras online. O cliente compra um item inicial <i>art1 </i>na quantidade <i>q1 </i>na primeira página de um catálogo e, em seguida, passa para uma nova página no catálogo. Para lembrar que o cliente comprou <i>q1 </i>itens <i>de art1</i>, o servidor pode colocar estas duas informações num campo oculto no formulário web da nova página. Nesta nova página, o cliente compra <i>q2 </i>unidades do item <i>art2</i>. Quando os dados deste segundo formulário forem enviados ao servidor, este não só receberá a informação (<i>q2</i>,<i>art2</i>), mas também (<i>q1</i>,<i>art1</i>), que também faz parte do formulário como um campo oculto que não pode ser modificado pelo utilizador. O servidor web colocará então as informações (<i>q1</i>,<i>art1</i>) e (<i>q2</i>,<i>art2</i>) num novo campo oculto e enviará uma nova página do catálogo. E assim por diante.</div></td></tr></table>
 
-<p><a id="toc69183357"></a>
-<a id="toc68706482"></a></p>
+<p><a id="toc68706482"></a>
+<a id="toc69183357"></a></p>
 <h2 id="53-envio-de-valores-de-formulario-para-um-servidor-web-atraves-de-um-navegador">5.3. Envio de valores de formulário para um servidor web através de um navegador</h2>
 <p>Já sabemos, do capítulo anterior, como um cliente transmite informações ao servidor. Faz-o através de:</p>
 <ul>

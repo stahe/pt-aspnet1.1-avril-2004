@@ -1111,15 +1111,15 @@
 
 
 
-<p><a id="toc68590499"></a>
-<a id="toc68683093"></a></p>
+<p><a id="toc68683093"></a>
+<a id="toc68590499"></a></p>
 <h1 id="6-exemplos">6. Exemplos</h1>
 <p>Neste capítulo, iremos ilustrar o que vimos anteriormente através de uma série de exemplos.</p>
-<p><a id="toc68590500"></a>
-<a id="toc68683094"></a></p>
+<p><a id="toc68683094"></a>
+<a id="toc68590500"></a></p>
 <h2 id="61-exemplo-1">6.1. Exemplo 1</h2>
-<p><a id="toc68590501"></a>
-<a id="toc68683095"></a></p>
+<p><a id="toc68683095"></a>
+<a id="toc68590501"></a></p>
 <h3 id="611-o-problema">6.1.1. O Problema</h3>
 <p>Esta aplicação deve permitir que um utilizador calcule os seus impostos. Estamos a considerar o caso simplificado de um contribuinte que tem apenas o seu salário para declarar (valores de 2004 para rendimentos de 2003):</p>
 <ul>
@@ -1144,8 +1144,8 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    0                0.4809    9505.54
 </code></pre></div>
 <p>o que dá imposto I = 0,4809*R - 9505,54*nbParts.</p>
-<p><a id="toc68590502"></a>
-<a id="toc68683096"></a></p>
+<p><a id="toc68683096"></a>
+<a id="toc68590502"></a></p>
 <h3 id="612-a-estrutura-mvc-da-aplicacao">6.1.2. A estrutura MVC da aplicação</h3>
 <p>A estrutura MVC da aplicação será a seguinte:</p>
 <p><img src="images/10000000000005AB00000258B0036703.png" width="680" height="281" style="width:17.999cm;height:7.444cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005AB00000258B0036703.png" /></p>
@@ -1160,8 +1160,8 @@
 </ul>
 
 <p>O controlador [main.aspx] não tem conhecimento sobre cálculos de impostos. É simplesmente responsável por gerir o diálogo cliente-servidor e executar as ações solicitadas pelo cliente. Para a ação [calculate], irá basear-se na classe de negócios [tax].</p>
-<p><a id="toc68590503"></a>
-<a id="toc68683097"></a></p>
+<p><a id="toc68683097"></a>
+<a id="toc68590503"></a></p>
 <h3 id="613-a-classe-de-negocios">6.1.3. A classe de negócios</h3>
 <p>A classe <code>**impot</code>** será definida da seguinte forma:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-vb.net">
@@ -1212,8 +1212,8 @@
 </code></pre></div>
 
 <p>Um objeto de <strong>imposto</strong>, fornecendo ao seu construtor uma fonte de dados do tipo [<strong>impotsData</strong>]. Esta classe possui um método público [<strong>getData</strong>] que recupera as três matrizes de dados necessárias para calcular o imposto, conforme descrito anteriormente. Este método pode lidar com uma exceção caso os dados não possam ser recuperados ou sejam considerados incorretos. Assim que o objeto [tax] for criado, o seu método <strong>calculate</strong> pode ser chamado repetidamente para calcular o imposto do contribuinte com base no seu estado civil (casado ou solteiro), número de filhos e salário anual.</p>
-<p><a id="toc68590504"></a>
-<a id="toc68683098"></a></p>
+<p><a id="toc68683098"></a>
+<a id="toc68590504"></a></p>
 <h3 id="614-a-classe-de-acesso-aos-dados">6.1.4. A classe de acesso aos dados</h3>
 <p>A classe [impotsData] é a classe que fornece acesso aos dados. É uma classe abstrata. Deve ser criada uma classe derivada para cada nova fonte de dados possível (matrizes, ficheiros simples, bases de dados, consola, etc.). A sua definição é a seguinte:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-vb.net">
@@ -1340,8 +1340,8 @@
 </ul>
 
 <p>O método [getData], que permite que classes externas recuperem as matrizes (limits, coeffr, coeffn), verifica simplesmente a validade das três matrizes utilizando o método [checkData] da classe base. Lança uma exceção se os dados forem inválidos.</p>
-<p><a id="toc68590505"></a>
-<a id="toc68683099"></a></p>
+<p><a id="toc68683099"></a>
+<a id="toc68590505"></a></p>
 <h3 id="615-testar-classes-de-negocio-e-classes-de-acesso-a-dados">6.1.5. Testar classes de negócio e classes de acesso a dados</h3>
 <p>É importante incluir apenas classes de negócio e de acesso a dados que tenham sido verificadas como corretas numa aplicação web. Desta forma, a fase de depuração da aplicação web pode concentrar-se nas camadas de controlador e de visualização. Um programa de teste pode ter o seguinte aspeto:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-vb.net">
@@ -1488,8 +1488,8 @@
 <a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>impôt=6872 euro(s)
 <a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>Paramètres du calcul de l&#39;impôt au format marié nbEnfants salaire ou rien pour arrêter :
 </code></pre></div>
-<p><a id="toc68590506"></a>
-<a id="toc68683100"></a></p>
+<p><a id="toc68683100"></a>
+<a id="toc68590506"></a></p>
 <h3 id="616-visualizacoes-da-aplicacao-web">6.1.6. Visualizações da aplicação web</h3>
 <p>A aplicação terá duas visualizações: [form.aspx] e [errors.aspx]. Vamos ilustrar como a aplicação funciona utilizando capturas de ecrã. A visualização [form.aspx] é apresentada quando o URL [main.aspx] é solicitado pela primeira vez:</p>
 <p><img src="images/1000000000000100000000FEAFB8A86F.png" width="256" height="254" style="width:6.773cm;height:6.72cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000100000000FEAFB8A86F.png" /></p>
@@ -1503,8 +1503,8 @@
 <p><img src="images/1000000000000100000000912AC3FAD4.png" width="256" height="145" style="width:6.773cm;height:3.836cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000100000000912AC3FAD4.png" /></p>
 <p>Pode utilizar o link [Voltar ao formulário] acima para regressar à vista [form.aspx] tal como estava antes do erro:</p>
 <p><img src="images/10000000000001010000008BD04534B1.png" width="257" height="139" style="width:6.8cm;height:3.678cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001010000008BD04534B1.png" /></p>
-<p><a id="toc68590507"></a>
-<a id="toc68683101"></a></p>
+<p><a id="toc68683101"></a>
+<a id="toc68590507"></a></p>
 <h3 id="617-a-visualizacao-formaspx">6.1.7. A visualização [form.aspx]</h3>
 <p>A página [form.aspx] terá o seguinte aspeto:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-html">
@@ -1628,8 +1628,8 @@
   </li>
 </ul>
 
-<p><a id="toc68590508"></a>
-<a id="toc68683102"></a></p>
+<p><a id="toc68683102"></a>
+<a id="toc68590508"></a></p>
 <h3 id="618-a-vista-erreursaspx">6.1.8. A vista [erreurs.aspx]</h3>
 <p>A vista [erreurs.aspx] apresenta quaisquer erros que possam ocorrer durante a execução da aplicação. O seu código de apresentação é o seguinte:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-html">
@@ -1704,8 +1704,8 @@
 </div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">texto do link</div></td></tr></table>
 
 <p>Agora que sabemos o que o utilizador da aplicação vê, podemos passar à escrita do controlador da aplicação.</p>
-<p><a id="toc68590509"></a>
-<a id="toc68683103"></a></p>
+<p><a id="toc68683103"></a>
+<a id="toc68590509"></a></p>
 <h3 id="619-os-controladores-globalasax-mainaspx">6.1.9. Os controladores [global.asax, main.aspx]</h3>
 <p>Vamos rever a arquitetura MVC da nossa aplicação:</p>
 <p><img src="images/10000000000005BE0000027993D6CC27.png" width="680" height="293" style="width:17.999cm;height:7.751cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005BE0000027993D6CC27.png" /></p>
