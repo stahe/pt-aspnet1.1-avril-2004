@@ -747,11 +747,11 @@
 
 
 <p><a id="toc57014748"></a>
-<a id="toc69180137"></a>
-<a id="toc69179879"></a></p>
+<a id="toc69179879"></a>
+<a id="toc69180137"></a></p>
 <h1 id="3-introducao-ao-desenvolvimento-web-em-aspnet">3. Introdução ao Desenvolvimento Web em ASP.NET</h1>
-<p><a id="toc69180138"></a>
-<a id="toc69179880"></a></p>
+<p><a id="toc69179880"></a>
+<a id="toc69180138"></a></p>
 <h2 id="31-introducao">3.1. Introdução</h2>
 <p>O capítulo anterior apresentou os princípios do desenvolvimento web, que são independentes da linguagem de programação utilizada. Atualmente, três tecnologias dominam o mercado de desenvolvimento web:</p>
 <ul>
@@ -804,8 +804,8 @@
 </ul>
 
 <p>O aspeto único do desenvolvimento web reside na escrita da classe controladora e das páginas de apresentação. As classes de negócios e de acesso a dados são classes .NET padrão que podem ser utilizadas numa aplicação web, bem como numa aplicação Windows ou mesmo numa aplicação de consola. Escrever estas classes requer uma compreensão sólida da programação orientada a objetos. Neste documento, elas serão escritas em VB.NET, pelo que assumimos que é proficiente nesta linguagem. Nesta perspetiva, não há necessidade de nos determos no código de acesso aos dados mais do que o necessário. Em quase todos os livros sobre ASP.NET, há um capítulo dedicado ao ADO.NET. O diagrama acima mostra que o acesso aos dados é tratado por classes .NET padrão que não têm consciência de que estão a ser utilizadas num contexto web. O controlador, que atua como o líder da equipa da aplicação web, não precisa de se preocupar com o ADO.NET. Ele precisa apenas de saber a que classe solicitar os dados necessários e como solicitá-los. É tudo. Colocar código ADO.NET no controlador viola o conceito MVC explicado acima, e não o faremos.</p>
-<p><a id="toc69180139"></a>
-<a id="toc69179881"></a></p>
+<p><a id="toc69179881"></a>
+<a id="toc69180139"></a></p>
 <h2 id="32-ferramentas">3.2. Ferramentas</h2>
 <p>Este documento destina-se a estudantes, pelo que iremos trabalhar com ferramentas gratuitas disponíveis para download na Internet:</p>
 <ul>
@@ -876,12 +876,12 @@
 <p>Agora vamos solicitar a URL [http://localhost/aspnet] utilizando um navegador:</p>
 <p><img src="images/10000000000001930000007E3010A7C6.png" width="403" height="126" style="width:10.663cm;height:3.334cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001930000007E3010A7C6.png" /></p>
 <p>Vemos que, na realidade, foi exibida a URL [http://localhost/aspnet/default.aspx]. Mais adiante neste documento, explicaremos como o Cassini deve ser configurado utilizando a notação Cassini(path,vpath), em que [path] é o nome da pasta raiz da árvore de diretórios web do servidor e [vpath] é o caminho virtual associado. Lembre-se de que, com o servidor Cassini(path,vpath), a URL [http://localhost/vpath/XX] corresponde ao caminho físico [path\XX]. Colocaremos todos os nossos documentos num diretório raiz físico que chamaremos de &lt;webroot&gt;. Assim, podemos referir-nos ao ficheiro &lt;webroot&gt;\chap2\here1.aspx. Para cada leitor, este diretório &lt;webroot&gt; será uma pasta na sua máquina pessoal. Aqui, as capturas de ecrã mostrarão que esta pasta é frequentemente [d:\data\devel\aspnet\poly]. No entanto, nem sempre será este o caso, uma vez que os testes foram realizados em máquinas diferentes.</p>
-<p><a id="toc69180140"></a>
-<a id="toc69179882"></a></p>
+<p><a id="toc69179882"></a>
+<a id="toc69180140"></a></p>
 <h2 id="33-primeiros-exemplos">3.3. Primeiros exemplos</h2>
 <p>Apresentaremos alguns exemplos simples de páginas web dinâmicas criadas com VB.NET. Os leitores são encorajados a testá-los para verificar se o seu ambiente de desenvolvimento está devidamente instalado. Veremos que existem várias formas de criar uma página ASP.NET. Escolheremos uma para o resto do nosso trabalho de desenvolvimento.</p>
-<p><a id="toc69180141"></a>
-<a id="toc69179883"></a></p>
+<p><a id="toc69179883"></a>
+<a id="toc69180141"></a></p>
 <h3 id="331-exemplo-basico-variante-1">3.3.1. Exemplo básico - Variante 1</h3>
 <p><strong>Ferramentas necessárias</strong>: um editor de texto, o servidor web Cassini</p>
 <p>Vamos revisitar o exemplo do capítulo anterior. Vamos criar o seguinte ficheiro [heure1.aspx]:</p>
@@ -903,8 +903,8 @@
 <p>Vamos colocar o código anterior no ficheiro [&lt;webroot&gt;\chap2\heure1.aspx]. Vamos iniciar o Cassini(&lt;webroot&gt;,/aspnet) e solicitar o URL [http://localhost/aspnet/chap2/heure1.aspx] num navegador:</p>
 <p><img src="images/10000000000001E70000007A24355C20.png" width="487" height="122" style="width:12.885cm;height:3.228cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001E70000007A24355C20.png" /></p>
 <p>Assim que obtivermos este resultado, sabemos que o ambiente de desenvolvimento está corretamente instalado. A página [heure1.aspx] foi compilada, uma vez que contém código VB.NET. A sua compilação produziu um ficheiro DLL que foi armazenado numa pasta do sistema e, em seguida, executado pelo servidor Cassini.</p>
-<p><a id="toc69180142"></a>
-<a id="toc69179884"></a></p>
+<p><a id="toc69179884"></a>
+<a id="toc69180142"></a></p>
 <h3 id="332-exemplo-basico-variante-2">3.3.2. Exemplo básico - variante 2</h3>
 <p><strong>Ferramentas necessárias</strong>: um editor de texto, o servidor web Cassini</p>
 <p>O documento [heure1.aspx] mistura código HTML e código VB.NET. Num exemplo tão simples, isto não constitui um problema. Se precisar de incluir mais código VB.NET, convém separar o código HTML do código VB de forma mais clara. Isto pode ser feito colocando o código VB dentro de uma tag &lt;script&gt;:</p>
@@ -933,8 +933,8 @@
 </code></pre></div>
 <p>Colocamos o documento [heure2.aspx] na árvore de diretórios [&lt;webroot&gt;\chap2\heure2.aspx] no servidor web Cassini (&lt;webroot&gt;,/aspnet) e solicitamos o documento utilizando um navegador:</p>
 <p><img src="images/10000000000001F40000007715F0E4DD.png" width="500" height="119" style="width:13.229cm;height:3.149cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F40000007715F0E4DD.png" /></p>
-<p><a id="toc69180143"></a>
-<a id="toc69179885"></a></p>
+<p><a id="toc69179885"></a>
+<a id="toc69180143"></a></p>
 <h3 id="333-exemplo-basico-variante-3">3.3.3. Exemplo básico - Variante 3</h3>
 <p><strong>Ferramentas necessárias</strong>: um editor de texto, o servidor web Cassini</p>
 <p>Levamos a separação do código VB e do código HTML um passo mais além, colocando-os em dois ficheiros separados. O código HTML estará no ficheiro [heure3.aspx] e o código VB em [heure3.aspx.vb]. O conteúdo de [heure3.aspx] será o seguinte:</p>
@@ -994,8 +994,8 @@
 
 <p>Os ficheiros [heure3.spx] e [heure3.aspx.vb] estão localizados em [&lt;webroot&gt;\chap2]. Em seguida, utilizando um navegador, solicitamos o URL [http://localhost/aspnet/chap2/heure3.aspx] ao servidor web (&lt;webroot&gt;,/aspnet):</p>
 <p><img src="images/10000000000001F100000082B4F70899.png" width="497" height="130" style="width:13.15cm;height:3.44cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F100000082B4F70899.png" /></p>
-<p><a id="toc69180144"></a>
-<a id="toc69179886"></a></p>
+<p><a id="toc69179886"></a>
+<a id="toc69180144"></a></p>
 <h3 id="334-exemplo-basico-variante-4">3.3.4. Exemplo básico - Variante 4</h3>
 <p><strong>Ferramentas necessárias</strong>: um editor de texto, o servidor web Cassini</p>
 <p>Utilizamos o mesmo exemplo de antes, mas consolidamos todo o código num único ficheiro [heure4.aspx]:</p>
@@ -1032,8 +1032,8 @@
 <p>Desta vez, o código VB foi organizado em procedimentos. Vemos o procedimento [Page_Load] do exemplo anterior. O objetivo aqui é demonstrar que uma página .aspx independente (não ligada a código VB num ficheiro separado) é implicitamente convertida numa classe derivada de [Page]. Portanto, podemos utilizar os atributos, métodos e eventos desta classe. É isso que se faz aqui, onde utilizamos o evento [Load] desta classe.</p>
 <p>O método de teste é idêntico aos anteriores:</p>
 <p><img src="images/10000000000001F40000007B43B53408.png" width="500" height="123" style="width:13.229cm;height:3.254cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F40000007B43B53408.png" /></p>
-<p><a id="toc69180145"></a>
-<a id="toc69179887"></a></p>
+<p><a id="toc69179887"></a>
+<a id="toc69180145"></a></p>
 <h3 id="335-exemplo-basico-variante-5">3.3.5. Exemplo Básico - Variante 5</h3>
 <p><strong>Ferramentas necessárias</strong>: um editor de texto, o servidor web Cassini</p>
 <p>Tal como no Exemplo 3, separamos o código VB e o código HTML em dois ficheiros distintos. O código VB é colocado em [heure5.aspx.vb]:</p>
@@ -1085,8 +1085,8 @@
 <p><img src="images/100000000000012D0000004E1C588EAC.png" width="301" height="78" style="width:7.964cm;height:2.064cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000012D0000004E1C588EAC.png" /></p>
 <p>Estamos prontos. Solicitamos o URL [http://localhost/aspnet/chap2/heure5.aspx] ao servidor Cassini (&lt;webroot&gt;,/aspnet):</p>
 <p><img src="images/10000000000001EB0000007E32B2E5BB.png" width="491" height="126" style="width:12.991cm;height:3.334cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001EB0000007E32B2E5BB.png" /></p>
-<p><a id="toc69180146"></a>
-<a id="toc69179888"></a></p>
+<p><a id="toc69179888"></a>
+<a id="toc69180146"></a></p>
 <h3 id="336-exemplo-basico-variante-6">3.3.6. Exemplo básico - Variante 6</h3>
 <p><strong>Ferramentas necessárias</strong>: um editor de texto, o servidor web Cassini</p>
 <p>Mostrámos até agora que uma aplicação web dinâmica tem dois componentes:</p>
@@ -1119,8 +1119,8 @@
 <p>Aqui, o controlador constrói a resposta completa, em vez de apenas as suas partes dinâmicas. Também a envia. Faz isso utilizando a propriedade [Response] do tipo [HttpResponse] na classe [Page]. Este objeto representa a resposta do servidor ao cliente. A classe [HttpResponse] possui um método [Write] para escrever no fluxo HTML que será enviado ao cliente. Aqui, armazenamos todo o fluxo HTML a ser enviado na variável [HTML] e enviamo-lo ao cliente utilizando [Response.Write(HTML)].</p>
 <p>Solicitamos a URL [http://localhost/aspnet/chap2/heure6.aspx] ao servidor Cassini (&lt;webroot&gt;,/aspnet):</p>
 <p><img src="images/100000000000022B000000A4C9F8B55B.png" width="555" height="164" style="width:14.684cm;height:4.339cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000022B000000A4C9F8B55B.png" /></p>
-<p><a id="toc69180147"></a>
-<a id="toc69179889"></a></p>
+<p><a id="toc69179889"></a>
+<a id="toc69180147"></a></p>
 <h3 id="337-conclusao">3.3.7. Conclusão</h3>
 <p>A seguir, utilizaremos o Método 3, que coloca o código VB e o código HTML de um documento web dinâmico em dois ficheiros separados. Este método tem a vantagem de dividir uma página web em dois componentes:</p>
 <ol>
