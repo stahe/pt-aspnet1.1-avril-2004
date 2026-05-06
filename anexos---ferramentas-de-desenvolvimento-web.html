@@ -1,0 +1,1921 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Desenvolvimento web com ASP.NET 1.1">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/pt-aspnet1.1-avril-2004/anexos---ferramentas-de-desenvolvimento-web.html">
+      
+      
+        <link rel="prev" href="componentes-de-servidor-asp---3.html">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>10. Anexos - Ferramentas de Desenvolvimento Web - Desenvolvimento web com ASP.NET 1.1</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "Desenvolvimento web com ASP.NET 1.1";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#10-anexos-ferramentas-de-desenvolvimento-web" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Desenvolvimento web com ASP.NET 1.1" class="md-header__button md-logo" aria-label="Desenvolvimento web com ASP.NET 1.1" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Desenvolvimento web com ASP.NET 1.1
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              10. Anexos - Ferramentas de Desenvolvimento Web
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Mudar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Mudar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/pt-aspnet1.1-avril-2004" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Desenvolvimento web com ASP.NET 1.1" class="md-nav__button md-logo" aria-label="Desenvolvimento web com ASP.NET 1.1" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Desenvolvimento web com ASP.NET 1.1
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/pt-aspnet1.1-avril-2004" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bem-vindos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introducao.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introdução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nocoes-basicas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Noções básicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introducao-ao-desenvolvimento-web-em-aspnet.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Introdução ao Desenvolvimento Web em ASP.NET
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="os-fundamentos-do-desenvolvimento-aspnet.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Os Fundamentos do Desenvolvimento ASP.NET
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gestao-da-interface-do-utilizador.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Gestão da Interface do Utilizador
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="exemplos.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Exemplos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="componentes-do-servidor-asp---1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Componentes do Servidor ASP - 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="componentes-do-servidor-asp---2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Componentes do Servidor ASP - 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="componentes-de-servidor-asp---3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Componentes de servidor ASP - 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Anexos - Ferramentas de Desenvolvimento Web
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="anexos---ferramentas-de-desenvolvimento-web.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Anexos - Ferramentas de Desenvolvimento Web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#101-servidores-web-navegadores-linguagens-de-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1. Servidores Web, Navegadores, Linguagens de Script
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102-onde-encontrar-as-ferramentas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2. Onde encontrar as ferramentas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103-easyphp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3. EasyPHP
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.3. EasyPHP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1031-configuracao-do-interpretador-php" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.1. configuração do interpretador PHP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1032-administracao-do-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.2. Administração do Apache
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1033-o-ficheiro-de-configuracao-do-apache-htpdconf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.3. O ficheiro de configuração do Apache [htpd.conf]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1034-administracao-do-mysql-com-o-phpmyadmin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3.4. Administração do MySQL com o PhpMyAdmin
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104-php" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4. PHP
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#105-perl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5. PERL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#106-vbscript-javascript-perlscript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.6. VBScript, JavaScript, PerlScript
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#107-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.7. JAVA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#108-servidor-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8. Servidor Apache
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.8. Servidor Apache">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1081-configuracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8.1. Configuração
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1082-php-ligacao-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8.2. PHP - Ligação Apache
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1083-ligacao-perl-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.8.3. Ligação PERL-APACHE
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#109-o-servidor-pws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9. O servidor PWS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.9. O servidor PWS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1091-instalacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.1. Instalação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1092-testes-iniciais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.2. Testes iniciais
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1093-php-ligacao-pws" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.9.3. PHP - Ligação PWS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1010-tomcat-servlets-java-e-jsp-java-server-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.10. Tomcat: Servlets Java e JSP (Java Server Pages)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.10. Tomcat: Servlets Java e JSP (Java Server Pages)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10101-instalacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.10.1. Instalação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10102-iniciarparar-o-servidor-web-tomcat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.10.2. Iniciar/Parar o Servidor Web Tomcat
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1011-jbuilder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.11. JBuilder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1012-o-servidor-web-cassini" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.12. O servidor Web Cassini
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><a id="toc67828559"></a>
+<a id="toc57014790"></a>
+<a id="toc18463275"></a>
+<a id="toc14772370"></a></p>
+<h1 id="10-anexos-ferramentas-de-desenvolvimento-web">10. Anexos - Ferramentas de Desenvolvimento Web</h1>
+<p>Aqui indicamos onde encontrar e como instalar ferramentas gratuitas para desenvolvimento web em Java, PHP, ASP e ASP.NET. Algumas ferramentas foram atualizadas, e as instruções aqui fornecidas podem já não se aplicar às versões mais recentes. Os leitores terão de se adaptar em conformidade... :</p>
+<ul>
+  <li>um <b>navegador</b> recente capaz de exibir XML. Os exemplos deste curso foram testados com o Internet Explorer 6.
+  </li>
+  <li>Um <b>JDK </b>(Java Development Kit) recente. O JDK inclui o plug-in do navegador Java 1.4, que permite aos navegadores exibir applets Java utilizando o JDK 1.4.
+  </li>
+  <li>Um <b>ambiente de desenvolvimento Java </b>para escrever servlets Java. Aqui, utilizamos o JBuilder 7.
+  </li>
+  <li><b>Servidores Web</b>: Apache, PWS (Personal Web Server, Cassini), Tomcat.
+    <ul>
+      <li>O Apache pode ser utilizado para desenvolver aplicações web em PERL (Practical Extracting and Reporting Language) ou PHP (Personal Home Page)
+      </li>
+      <li>O PWS pode ser utilizado para desenvolver aplicações web em ASP (Active Server Pages) ou PHP em plataformas Windows. O Cassini suporta o desenvolvimento em ASP.NET.
+      </li>
+      <li>O Tomcat é utilizado para desenvolver aplicações web utilizando servlets Java ou JSP (Java Server Pages)
+      </li>
+    </ul>
+  </li>
+  <li>Um <b>sistema de gestão de bases de dados</b>: MySQL
+  </li>
+  <li><b>EasyPHP</b>: uma ferramenta que integra o servidor web Apache, a linguagem PHP e o SGBD MySQL
+  </li>
+</ul>
+
+<p><a id="toc67828560"></a>
+<a id="toc57014791"></a>
+<a id="toc18463276"></a>
+<a id="toc14772371"></a></p>
+<h2 id="101-servidores-web-navegadores-linguagens-de-script">10.1. Servidores Web, Navegadores, Linguagens de Script</h2>
+<ol>
+  <li><b>Principais servidores web </b>
+  </li>
+</ol>
+<ul>
+  <li>Apache (Linux, Windows)
+  </li>
+  <li>Internet Information Server (IIS) (NT), Personal Web Server (PWS) (Windows 9x), Cassini (plataformas .NET)
+  </li>
+</ul>
+<ol>
+  <li><b>Principais navegadores</b>
+  </li>
+</ol>
+<ul>
+  <li>Internet Explorer (Windows)
+  </li>
+  <li>Netscape (Linux, Windows)
+  </li>
+  <li>Mozilla (Linux, Windows)
+  </li>
+  <li>Opera (Linux, Windows)
+  </li>
+</ul>
+<ol>
+  <li><b>Linguagens de script do lado do servidor</b>
+  </li>
+</ol>
+<ul>
+  <li>VBScript (IIS, PWS)
+  </li>
+  <li>JavaScript (IIS, PWS)
+  </li>
+  <li>Perl (Apache, IIS, PWS)
+  </li>
+  <li>PHP (Apache, IIS, PWS)
+  </li>
+  <li>Java (Apache, Tomcat)
+  </li>
+  <li>Linguagens .NET
+  </li>
+</ul>
+<ol>
+  <li><b>Linguagens de script do lado do navegador</b>
+  </li>
+</ol>
+<ul>
+  <li>VBScript (IE)
+  </li>
+  <li>JavaScript (IE, Netscape)
+  </li>
+  <li>PerlScript (IE)
+  </li>
+  <li>Java (IE, Netscape)
+  </li>
+</ul>
+
+<p><a id="toc67828561"></a>
+<a id="toc57014792"></a>
+<a id="toc18463277"></a>
+<a id="toc14772372"></a></p>
+<h2 id="102-onde-encontrar-as-ferramentas">10.2. Onde encontrar as ferramentas</h2>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Netscape
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.netscape.com/ (ligação para downloads)</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Internet Explorer
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.microsoft.com/windows/ie/default.asp</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Mozilla
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.mozilla.org</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>PHP
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.php.net</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Active PERL
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.activestate.com </b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>VBScript, JavaScript
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://msdn.microsoft.com/scripting (siga o link do Windows Script)</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>JAVA
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://java.sun.com/</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Apache
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.apache.org/</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>PWS
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>incluído no NT 4.0 Option Pack para Windows 95</b></div><div style="margin:0 0 0.5em 0"><b>incluído no CD do Windows 98</b></div><div style="margin:0 0 0.5em 0"><b>http://www.microsoft.com/ntserver/nts/downloads/recommended/NT4OptPk/win95.asp</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>IIS (Windows NT/2000)
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.microsoft.com</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Tomcat
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://jakarta.apache.org/tomcat/</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>JBuilder
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.borland.com/jbuilder/</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>EasyPHP
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.easyphp.org/</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Cassini
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>http://www.asp.net</b></div></td></tr></table>
+
+<p><a id="toc67828562"></a>
+<a id="toc57014793"></a>
+<a id="toc18463278"></a>
+<a id="toc14772373"></a></p>
+<h2 id="103-easyphp">10.3. EasyPHP</h2>
+<p>Esta aplicação é muito prática porque inclui o seguinte num único pacote:</p>
+<ul>
+  <li>o servidor web Apache
+  </li>
+  <li>um interpretador PHP
+  </li>
+  <li>o SGBD MySQL (3.23.x)
+  </li>
+  <li>uma ferramenta de administração do MySQL: PhpMyAdmin
+  </li>
+</ul>
+
+<p>A aplicação de instalação tem o seguinte aspeto:</p>
+<p><img src="images/100000000000020A0000005234161DCB.png" width="522" height="82" style="width:13.811cm;height:2.17cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000020A0000005234161DCB.png" /></p>
+<p>A instalação do EasyPHP é simples e cria-se uma estrutura de diretórios no sistema de ficheiros:</p>
+<p><img src="images/10000000000001B600000146978AB819.png" width="438" height="326" style="width:11.589cm;height:8.625cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001B600000146978AB819.png" /></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>easyphp.exe
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">o executável da aplicação</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>apache
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">a estrutura de diretórios do servidor Apache</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>mysql
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">o diretório da base de dados MySQL</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>phpMyAdmin
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">a estrutura de diretórios da aplicação phpMyAdmin</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>PHP
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">a estrutura de diretórios do PHP</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>www
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">raiz da árvore de diretórios para páginas web servidas pelo servidor Apache do EasyPHP</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>cgi-bin
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">diretório onde pode colocar scripts CGI para o servidor Apache</div></td></tr></table>
+
+<p>A principal vantagem do EasyPHP é que a aplicação vem pré-configurada. Assim, o Apache, o PHP e o MySQL já estão configurados para funcionar em conjunto. Quando inicia <em>o EasyPHP</em> através do seu atalho no menu Programas, aparece um ícone no canto inferior direito do ecrã.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000015400000048716652DD.png" width="340" height="72" style="display:inline-block; margin:4px;width:8.996cm;height:1.905cm;" class="odt-zoomable" data-zoom-src="images/100000000000015400000048716652DD.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000890000001D341042E0.png" width="137" height="29" style="display:inline-block; margin:4px;width:3.625cm;height:0.767cm;" class="odt-zoomable" data-zoom-src="images/10000000000000890000001D341042E0.png" /></td></tr></table>
+
+<p>O «E» com um ponto vermelho deve estar a piscar se o servidor web <em>Apache</em> e a base de dados <em>MySQL</em> estiverem em funcionamento. Ao clicar com o botão direito do rato sobre ele, abre-se um menu com as seguintes opções:</p>
+<p><img src="images/100000000000006E000000A9539191D3.png" width="110" height="169" style="width:2.91cm;height:4.471cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000006E000000A9539191D3.png" /></p>
+<p>A opção <em>«Administração</em>» permite-lhe definir as configurações e realizar testes de funcionalidade:</p>
+<p><img src="images/10000000000002DF0000016D6CB044FE.png" width="680" height="338" style="width:17.992cm;height:8.931cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002DF0000016D6CB044FE.png" /></p>
+<p><a id="toc57014794"></a>
+<a id="toc18463279"></a>
+<a id="toc14772374"></a>
+<a id="toc67828563"></a></p>
+<h3 id="1031-configuracao-do-interpretador-php">10.3.1. configuração do interpretador PHP</h3>
+<p>O botão <strong>PHP Info</strong> deve permitir-lhe verificar se a combinação Apache-PHP está a funcionar corretamente: deverá aparecer uma página de informações do PHP:</p>
+<p><img src="images/10000000000002DF000001573392C759.png" width="680" height="317" style="width:17.992cm;height:8.387cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002DF000001573392C759.png" /></p>
+<p>O botão <strong>Extensões</strong> exibe uma lista das extensões PHP instaladas. Estas são, na verdade, bibliotecas de funções.</p>
+<p><img src="images/1000000000000189000000DF999A8FC1.png" width="393" height="223" style="width:10.398cm;height:5.9cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000189000000DF999A8FC1.png" /></p>
+<p>O ecrã acima mostra, por exemplo, que as funções necessárias para utilizar a base de dados MySQL estão presentes.</p>
+<p>O botão <strong>«Configurações»</strong> exibe o <em>nome de utilizador e a palavra-passe</em> do administrador da base de dados MySQL.</p>
+<p><img src="images/100000000000012E0000004DC39428BD.png" width="302" height="77" style="width:7.99cm;height:2.037cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000012E0000004DC39428BD.png" /></p>
+<p>A utilização da base de dados MySQL está fora do âmbito desta breve visão geral, mas fica claro aqui que deve ser definida uma palavra-passe para o administrador da base de dados. </p>
+<p><a id="toc67828564"></a>
+<a id="toc57014795"></a>
+<a id="toc18463280"></a>
+<a id="toc14772375"></a></p>
+<h3 id="1032-administracao-do-apache">10.3.2. Administração do Apache</h3>
+<p>Ainda na página de administração do EasyPHP, o link <strong>«Os seus aliases»</strong> permite-lhe definir aliases associados a um diretório. Isto permite-lhe colocar páginas web fora do diretório www na árvore de diretórios do EasyPHP.</p>
+<p><img src="images/10000000000002D10000010047855AB1.png" width="680" height="242" style="width:17.992cm;height:6.391cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002D10000010047855AB1.png" /></p>
+<p>Se, na página acima, introduzir as seguintes informações:</p>
+<p><img src="images/10000000000001F70000005F1EE8B944.png" width="503" height="95" style="width:13.309cm;height:2.514cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F70000005F1EE8B944.png" /></p>
+<p>e clicar no botão <em>«Validate»</em>, as seguintes linhas são adicionadas ao ficheiro <em>&lt;easyphp&gt;\apache\conf\httpd.conf</em>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>    <span class="n">Alias</span> <span class="o">/</span><span class="n">st</span><span class="o">/</span> <span class="s2">&quot;e:/data/serge/web/&quot;</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="o">&lt;</span><span class="n">Directory</span> <span class="s2">&quot;e:/data/serge/web&quot;</span><span class="o">&gt;</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>        <span class="n">Options</span> <span class="n">FollowSymLinks</span> <span class="n">Indexes</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>        <span class="n">AllowOverride</span> <span class="kc">None</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>        <span class="n">Order</span> <span class="n">deny</span><span class="p">,</span><span class="n">allow</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>        <span class="n">allow</span> <span class="kn">from</span><span class="w"> </span><span class="mf">127.0.0.1</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>        <span class="n">deny</span> <span class="kn">from</span><span class="w"> </span><span class="nn">all</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>    <span class="o">&lt;/</span><span class="n">Directory</span><span class="o">&gt;</span>
+</code></pre></div>
+<p><em>&lt;easyphp&gt;</em> refere-se ao diretório de instalação do EasyPHP. O <em>httpd.conf</em> é o ficheiro de configuração do servidor Apache. Por conseguinte, pode obter o mesmo resultado editando este ficheiro diretamente. As alterações ao ficheiro <em>httpd.conf</em> são normalmente aplicadas imediatamente pelo Apache. Se tal não acontecer, terá de parar e reiniciar o servidor, utilizando o ícone do EasyPHP: </p>
+<p><img src="images/100000000000006E000000A9539191D3.png" width="110" height="169" style="width:2.91cm;height:4.471cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000006E000000A9539191D3.png" /></p>
+<p>Para concluir o nosso exemplo, podemos agora colocar páginas web na árvore de diretórios <em>e:\data\serge\web</em>: </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>dos&gt;dir e:\data\serge\web\html\balises.htm
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>14/07/2002  17:02                3 767 balises.htm
+</code></pre></div>
+<p>e solicitar esta página utilizando o alias <strong>st</strong>:</p>
+<p><img src="images/100000000000018800000127CABE7D97.png" width="392" height="295" style="width:10.372cm;height:7.805cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000018800000127CABE7D97.png" /></p>
+<p>Neste exemplo, o servidor Apache foi configurado para funcionar na porta 81. A sua porta padrão é a 80. Isto é controlado pela seguinte linha no ficheiro <em>httpd.conf</em> que já vimos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>Port 81
+</code></pre></div>
+<p><a id="toc67828565"></a>
+<a id="toc57014796"></a>
+<a id="toc18463281"></a>
+<a id="toc14772376"></a></p>
+<h3 id="1033-o-ficheiro-de-configuracao-do-apache-htpdconf">10.3.3. O ficheiro de configuração do Apache [htpd.conf]</h3>
+<p>Quando quiser ajustar o Apache, terá de editar manualmente o seu ficheiro de configuração <em>httpd.conf</em>, localizado aqui na pasta <em>&lt;easyphp&gt;\apache\conf</em>:</p>
+<p><img src="images/100000000000014E000000E6ACD5247E.png" width="334" height="230" style="width:8.837cm;height:6.085cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014E000000E6ACD5247E.png" /></p>
+<p>Aqui estão alguns pontos-chave a ter em conta neste ficheiro de configuração:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold">linha(s)</span><span style="font-weight:bold"></span></span></span>
+</code></pre></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>função</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>ServerRoot &quot;D:/Program Files/Apache Group/Apache&quot;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">indica a pasta que contém a árvore de diretórios do Apache</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>Porta 80
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">especifica qual a porta que o servidor web irá utilizar. Normalmente, esta é a 80. Ao alterar esta linha, pode fazer com que o servidor web funcione numa porta diferente</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>ServerAdmin root@istia.univ-angers.fr
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">o endereço de e-mail do administrador do servidor Apache</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>ServerName stahe.istia.uang
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">o nome da máquina na qual o servidor Apache está a ser executado</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>ServerRoot &quot;E:/Program Files/EasyPHP/apache&quot;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">o diretório de instalação do servidor Apache. Quando nomes de arquivos relativos aparecem no arquivo de configuração, eles são relativos a este diretório.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>DocumentRoot &quot;E:/Program Files/EasyPHP/www&quot;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">o diretório raiz da árvore de páginas web servidas pelo servidor. Aqui, a URL<i> http://machine/rep1/fic1.html </i>corresponderá ao ficheiro <i>E:\Program Files\EasyPHP\www\rep1\fic1.html</i></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>&lt;Directory &quot;E:/Arquivos de Programas/EasyPHP/www&quot;&gt;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">define as propriedades da pasta anterior</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>ErrorLog logs/error.log
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">pasta logs, ou seja, efetivamente <i>&lt;ServerRoot&gt;\logs\error.log</i>: <i>E:\Program Files\EasyPHP\apache\logs\error.log</i>. Este é o ficheiro a verificar se verificar que o servidor Apache não está a funcionar.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>    ScriptAlias /cgi-bin/ &quot;E:/Program Files/EasyPHP/cgi-bin/&quot;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><i>E:\Arquivos de Programas\EasyPHP\cgi-bin </i>será a raiz da árvore de diretórios onde pode colocar scripts CGI. Assim, a URL<i> http://machine/cgi-bin/rep1/script1.pl </i>será a URL para o script CGI <i>E:\Arquivos de Programas\EasyPHP\cgi-bin</i><i>\rep1\script1.pl</i>.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>&lt;Directory &quot;E:/Program Files/EasyPHP/cgi-bin/&quot;&gt;
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">define as propriedades da pasta acima</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="n">LoadModule</span><span class="w"> </span><span class="n">php4_module</span><span class="w"> </span><span class="s">&quot;E:/Program Files/EasyPHP/php/php4apache.dll&quot;</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="n">AddModule</span><span class="w"> </span><span class="n">mod_php4</span><span class="p">.</span><span class="n">c</span>
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Linhas para carregar os módulos que permitem ao Apache funcionar com o PHP4.</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>    AddType application/x-httpd-php .phtml .pwml .php3 .php4 .php .php2 .inc
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">define as extensões de ficheiro a serem tratadas como ficheiros PHP</div></td></tr></table>
+
+<p><a id="toc67828566"></a>
+<a id="toc57014797"></a>
+<a id="toc18463282"></a>
+<a id="toc14772377"></a></p>
+<h3 id="1034-administracao-do-mysql-com-o-phpmyadmin">10.3.4. Administração do MySQL com o PhpMyAdmin</h3>
+<p>Na página de administração do EasyPHP, clique no botão <strong>PhpMyAdmin</strong>: </p>
+<p><img src="images/100000000000032D0000015989006742.png" width="680" height="289" style="width:17.979cm;height:7.634cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000032D0000015989006742.png" /></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">A lista suspensa em <i>Home </i>exibe as bases de dados atuais.</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000008A000000A9290338B1.png" width="138" height="169" style="display:inline-block; margin:4px;width:3.651cm;height:4.471cm;" class="odt-zoomable" data-zoom-src="images/100000000000008A000000A9290338B1.png" /></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">O número entre parênteses é o número de tabelas. Se selecionar uma base de dados, as suas tabelas são apresentadas:</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000086000000EC977ACD13.png" width="134" height="236" style="display:inline-block; margin:4px;width:3.545cm;height:6.244cm;" class="odt-zoomable" data-zoom-src="images/1000000000000086000000EC977ACD13.png" /></td></tr></table>
+
+<p>A página web oferece várias operações na base de dados:</p>
+<p><img src="images/10000000000002B50000010B3AC00C67.png" width="680" height="262" style="width:17.992cm;height:6.932cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002B50000010B3AC00C67.png" /></p>
+<p>Se clicar na ligação <em>«Ver utilizador</em>»:</p>
+<p><img src="images/100000000000021A0000011EC1D790F4.png" width="538" height="286" style="width:14.235cm;height:7.567cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000021A0000011EC1D790F4.png" /></p>
+<p>Existe apenas um utilizador aqui: o root, que é o administrador do MySQL. Ao clicar na ligação <em>«Editar</em>», pode alterar a sua palavra-passe, que atualmente está em branco — uma prática não recomendada para um administrador. Não entraremos em mais pormenores sobre <em>o PhpMyAdmin</em>, uma vez que se trata de uma ferramenta com inúmeras funcionalidades cuja descrição completa exigiria várias páginas.</p>
+<p><a id="toc67828567"></a>
+<a id="toc57014798"></a>
+<a id="toc18463283"></a>
+<a id="toc14772378"></a></p>
+<h2 id="104-php">10.4. PHP</h2>
+<p>Já vimos como obter o PHP através da aplicação EasyPHP. Para obter o PHP diretamente, aceda ao site <strong>http://www.php.net.</strong> O PHP não se limita à utilização na Web. Pode ser utilizado como linguagem de script no Windows. Crie o seguinte script e guarde-o como <em>date.php</em>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>&lt;?
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>  // script php affichant l&#39;heure
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>  $maintenant=date(&quot;j/m/y, H:i:s&quot;,time());
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>  echo &quot;Nous sommes le $maintenant&quot;;
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>?&gt;
+</code></pre></div>
+<p>Numa janela do DOS, navegue até ao diretório <strong>que contém [date.php] e execute-o</strong><strong>:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>dos&gt;&quot;e:\program files\easyphp\php\php.exe&quot; date.php
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>X-Powered-By: PHP/4.2.0
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>Content-type: text/html
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>Nous sommes le 18/07/02, 09:31:01
+</code></pre></div>
+<p><a id="toc67828568"></a>
+<a id="toc57014799"></a>
+<a id="toc18463284"></a>
+<a id="toc14772379"></a></p>
+<h2 id="105-perl">10.5. PERL</h2>
+<p>É melhor que o Internet Explorer já esteja instalado. Se estiver presente, o Active Perl irá configurá-lo para aceitar scripts PERL em páginas HTML, que serão executados pelo próprio IE no lado do cliente. O site do Active Perl encontra-se no URL http://www.activestate.comA instalação, o PERL será instalado num diretório que chamaremos <strong>de &lt;perl&gt;</strong>. Ele contém a seguinte estrutura de diretórios:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>DEISL1   ISU        32 403  23/06/00  17:16 DeIsL1.isu
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>BIN            &lt;REP&gt;        23/06/00  17:15 bin
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>LIB            &lt;REP&gt;        23/06/00  17:15 lib
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>HTML           &lt;REP&gt;        23/06/00  17:15 html
+<a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a>EG             &lt;REP&gt;        23/06/00  17:15 eg
+<a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a>SITE           &lt;REP&gt;        23/06/00  17:15 site
+<a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a>HTMLHELP       &lt;REP&gt;        28/06/00  18:37 htmlhelp
+</code></pre></div>
+<p>O executável <em>perl.exe</em> está localizado em <strong>&lt;perl&gt;\bin</strong>. O Perl é uma linguagem de script que funciona no Windows e no Unix. Também é utilizada na programação web. Vamos escrever o nosso primeiro script:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="err">#</span><span class="w"> </span><span class="nx">script</span><span class="w"> </span><span class="nx">PERL</span><span class="w"> </span><span class="nx">affichant</span><span class="w"> </span><span class="nx">l</span><span class="err">&#39;</span><span class="nx">heure</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a><span class="err">#</span><span class="w"> </span><span class="nx">modules</span>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a><span class="nx">use</span><span class="w"> </span><span class="nx">strict</span><span class="p">;</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a>
+<a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a><span class="err">#</span><span class="w"> </span><span class="nx">programme</span>
+<a id="__codelineno-39-7" name="__codelineno-39-7" href="#__codelineno-39-7"></a><span class="nx">my</span><span class="w"> </span><span class="p">(</span><span class="nx">$secondes</span><span class="p">,</span><span class="nx">$minutes</span><span class="p">,</span><span class="nx">$heure</span><span class="p">)</span><span class="o">=</span><span class="nx">localtime</span><span class="p">(</span><span class="nx">time</span><span class="p">);</span>
+<a id="__codelineno-39-8" name="__codelineno-39-8" href="#__codelineno-39-8"></a><span class="nx">print</span><span class="w"> </span><span class="s2">&quot;Il est $heure:$minutes:$secondes\n&quot;</span><span class="p">;</span>
+</code></pre></div>
+<p>Guarde este script num ficheiro <em>chamado heure.pl</em>. Abra uma janela do DOS, navegue até ao diretório <strong><em>que contém o script e execute-o:</em></strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>dos&gt;e:\perl\bin\perl.exe heure.pl
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>Il est 9:34:21
+</code></pre></div>
+<p><a id="toc67828569"></a>
+<a id="toc57014800"></a>
+<a id="toc18463285"></a>
+<a id="toc14772380"></a></p>
+<h2 id="106-vbscript-javascript-perlscript">10.6. VBScript, JavaScript, PerlScript</h2>
+<p>Estas são linguagens de script para o Windows. Podem ser executadas em vários ambientes, tais como</p>
+<ul>
+  <li><i>Windows Scripting Host </i>para utilização direta no Windows, particularmente para escrever scripts de administração de sistemas
+  </li>
+  <li><i>Internet Explorer</i>. É então utilizado em páginas HTML, adicionando um nível de interatividade que não pode ser alcançado apenas com HTML.
+  </li>
+  <li><i>Internet Information Server </i>(IIS), o servidor web da Microsoft no NT/2000, e o seu equivalente, <i>o Personal Web Server </i>(PWS), no Win9x. Neste caso, o VBScript é utilizado para programação web do lado do servidor, uma tecnologia denominada ASP (<i>Active Server Pages</i>) pela Microsoft.
+  </li>
+</ul>
+
+<p>Descarregue o ficheiro de instalação a partir do URL: <em>http://msdn.microsoft.com/scripting</em> e siga as ligações <em>do Windows Script</em>. São instalados os seguintes componentes:</p>
+<ul>
+  <li>o contentor<i> Windows Scripting Host</i>, que suporta várias linguagens de script, tais como VBScript e JavaScript, bem como outras como PerlScript, que está incluída no Active Perl.
+  </li>
+  <li>um interpretador VBScript
+  </li>
+  <li>um interpretador de JavaScript
+  </li>
+</ul>
+
+<p>Vamos realizar alguns testes rápidos. Vamos criar o seguinte programa <em>VBScript</em>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="c1">&#39; a class</span>
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="kd">class</span><span class="w"> </span><span class="nc">personne</span>
+<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a><span class="w">  </span><span class="kd">Dim</span><span class="w"> </span><span class="nv">nom</span>
+<a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a><span class="w">  </span><span class="kd">Dim</span><span class="w"> </span><span class="nv">age</span>
+<a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a><span class="k">End</span><span class="w"> </span><span class="k">class</span>
+<a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a>
+<a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a><span class="c1">&#39; creation of a person object</span>
+<a id="__codelineno-41-8" name="__codelineno-41-8" href="#__codelineno-41-8"></a><span class="k">Set</span><span class="w"> </span><span class="n">p1</span><span class="o">=</span><span class="k">new</span><span class="w"> </span><span class="n">personne</span>
+<a id="__codelineno-41-9" name="__codelineno-41-9" href="#__codelineno-41-9"></a><span class="k">With</span><span class="w"> </span><span class="n">p1</span>
+<a id="__codelineno-41-10" name="__codelineno-41-10" href="#__codelineno-41-10"></a><span class="w">  </span><span class="p">.</span><span class="n">nom</span><span class="o">=</span><span class="s2">&quot;dupont&quot;</span>
+<a id="__codelineno-41-11" name="__codelineno-41-11" href="#__codelineno-41-11"></a><span class="w">  </span><span class="p">.</span><span class="n">age</span><span class="o">=</span><span class="mi">18</span>
+<a id="__codelineno-41-12" name="__codelineno-41-12" href="#__codelineno-41-12"></a><span class="k">End</span><span class="w"> </span><span class="k">With</span>
+<a id="__codelineno-41-13" name="__codelineno-41-13" href="#__codelineno-41-13"></a>
+<a id="__codelineno-41-14" name="__codelineno-41-14" href="#__codelineno-41-14"></a><span class="c1">&#39; display properties person p1</span>
+<a id="__codelineno-41-15" name="__codelineno-41-15" href="#__codelineno-41-15"></a><span class="k">With</span><span class="w"> </span><span class="n">p1</span>
+<a id="__codelineno-41-16" name="__codelineno-41-16" href="#__codelineno-41-16"></a><span class="w">  </span><span class="n">wscript</span><span class="p">.</span><span class="n">echo</span><span class="w"> </span><span class="s2">&quot;nom=&quot;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">.</span><span class="n">nom</span>
+<a id="__codelineno-41-17" name="__codelineno-41-17" href="#__codelineno-41-17"></a><span class="w">  </span><span class="n">wscript</span><span class="p">.</span><span class="n">echo</span><span class="w"> </span><span class="s2">&quot;age=&quot;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">.</span><span class="n">age</span>
+<a id="__codelineno-41-18" name="__codelineno-41-18" href="#__codelineno-41-18"></a><span class="k">End</span><span class="w"> </span><span class="k">With</span>
+</code></pre></div>
+<p>Este programa utiliza objetos. Vamos chamá-lo de <em>objects.vbs</em> (a extensão .vbs indica um ficheiro VBScript). Navegue até ao diretório onde se encontra e execute-o:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>dos&gt;cscript objets.vbs
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>Microsoft (R) Windows Script Host Version 5.6
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a>Copyright (C) Microsoft Corporation 1996-2001. All rights reserved.
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>
+<a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a>nom=dupont
+<a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a>age=18
+</code></pre></div>
+<p>Agora vamos criar o seguinte programa JavaScript que utiliza matrizes:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>// tableau dans un variant
+<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a>// tableau vide
+<a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a>tableau=new Array();
+<a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a>affiche(tableau);
+<a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a>// tableau croît dynamiquement
+<a id="__codelineno-43-6" name="__codelineno-43-6" href="#__codelineno-43-6"></a>for(i=0;i<span class="p">&lt;</span><span class="nt">3</span><span class="err">;</span><span class="na">i</span><span class="err">++){</span>
+<a id="__codelineno-43-7" name="__codelineno-43-7" href="#__codelineno-43-7"></a>  <span class="na">tableau</span><span class="err">.</span><span class="na">push</span><span class="err">(</span><span class="na">i</span><span class="err">*</span><span class="na">10</span><span class="err">);</span>
+<a id="__codelineno-43-8" name="__codelineno-43-8" href="#__codelineno-43-8"></a><span class="err">}</span>
+<a id="__codelineno-43-9" name="__codelineno-43-9" href="#__codelineno-43-9"></a><span class="err">//</span> <span class="na">affichage</span> <span class="na">tableau</span>
+<a id="__codelineno-43-10" name="__codelineno-43-10" href="#__codelineno-43-10"></a><span class="na">affiche</span><span class="err">(</span><span class="na">tableau</span><span class="err">);</span>
+<a id="__codelineno-43-11" name="__codelineno-43-11" href="#__codelineno-43-11"></a><span class="err">//</span> <span class="na">encore</span>
+<a id="__codelineno-43-12" name="__codelineno-43-12" href="#__codelineno-43-12"></a><span class="na">for</span><span class="err">(</span><span class="na">i</span><span class="o">=</span><span class="s">3;i&lt;6;i++){</span>
+<a id="__codelineno-43-13" name="__codelineno-43-13" href="#__codelineno-43-13"></a>  <span class="na">tableau</span><span class="err">.</span><span class="na">push</span><span class="err">(</span><span class="na">i</span><span class="err">*</span><span class="na">10</span><span class="err">);</span>
+<a id="__codelineno-43-14" name="__codelineno-43-14" href="#__codelineno-43-14"></a><span class="err">}</span>
+<a id="__codelineno-43-15" name="__codelineno-43-15" href="#__codelineno-43-15"></a><span class="na">affiche</span><span class="err">(</span><span class="na">tableau</span><span class="err">);</span>
+<a id="__codelineno-43-16" name="__codelineno-43-16" href="#__codelineno-43-16"></a>
+<a id="__codelineno-43-17" name="__codelineno-43-17" href="#__codelineno-43-17"></a><span class="err">//</span> <span class="na">tableaux</span> <span class="na">à</span> <span class="na">plusieurs</span> <span class="na">dimensions</span>
+<a id="__codelineno-43-18" name="__codelineno-43-18" href="#__codelineno-43-18"></a><span class="na">WScript</span><span class="err">.</span><span class="na">echo</span><span class="err">(&quot;</span><span class="na">-----------------------------</span><span class="err">&quot;);</span>
+<a id="__codelineno-43-19" name="__codelineno-43-19" href="#__codelineno-43-19"></a>
+<a id="__codelineno-43-20" name="__codelineno-43-20" href="#__codelineno-43-20"></a><span class="na">tableau2</span><span class="o">=</span><span class="s">new</span> <span class="na">Array</span><span class="err">();</span>
+<a id="__codelineno-43-21" name="__codelineno-43-21" href="#__codelineno-43-21"></a><span class="na">for</span><span class="err">(</span><span class="na">i</span><span class="o">=</span><span class="s">0;i&lt;3;i++){</span>
+<a id="__codelineno-43-22" name="__codelineno-43-22" href="#__codelineno-43-22"></a>  <span class="na">tableau2</span><span class="err">.</span><span class="na">push</span><span class="err">(</span><span class="na">new</span> <span class="na">Array</span><span class="err">());</span>
+<a id="__codelineno-43-23" name="__codelineno-43-23" href="#__codelineno-43-23"></a>  <span class="na">for</span><span class="err">(</span><span class="na">j</span><span class="o">=</span><span class="s">0;j&lt;4;j++){</span>
+<a id="__codelineno-43-24" name="__codelineno-43-24" href="#__codelineno-43-24"></a>    <span class="na">tableau2</span><span class="err">[</span><span class="na">i</span><span class="err">].</span><span class="na">push</span><span class="err">(</span><span class="na">i</span><span class="err">*</span><span class="na">10</span><span class="err">+</span><span class="na">j</span><span class="err">);</span>
+<a id="__codelineno-43-25" name="__codelineno-43-25" href="#__codelineno-43-25"></a>  <span class="err">}//</span><span class="na">for</span> <span class="na">j</span>
+<a id="__codelineno-43-26" name="__codelineno-43-26" href="#__codelineno-43-26"></a><span class="err">}//</span> <span class="na">for</span> <span class="na">i</span>
+<a id="__codelineno-43-27" name="__codelineno-43-27" href="#__codelineno-43-27"></a><span class="na">affiche2</span><span class="err">(</span><span class="na">tableau2</span><span class="err">);</span>
+<a id="__codelineno-43-28" name="__codelineno-43-28" href="#__codelineno-43-28"></a>
+<a id="__codelineno-43-29" name="__codelineno-43-29" href="#__codelineno-43-29"></a><span class="err">//</span> <span class="na">fin</span>
+<a id="__codelineno-43-30" name="__codelineno-43-30" href="#__codelineno-43-30"></a><span class="na">WScript</span><span class="err">.</span><span class="na">quit</span><span class="err">(</span><span class="na">0</span><span class="err">);</span>
+<a id="__codelineno-43-31" name="__codelineno-43-31" href="#__codelineno-43-31"></a>
+<a id="__codelineno-43-32" name="__codelineno-43-32" href="#__codelineno-43-32"></a><span class="err">//</span> <span class="na">---------------------------------------------------------</span>
+<a id="__codelineno-43-33" name="__codelineno-43-33" href="#__codelineno-43-33"></a><span class="na">function</span> <span class="na">affiche</span><span class="err">(</span><span class="na">tableau</span><span class="err">){</span>
+<a id="__codelineno-43-34" name="__codelineno-43-34" href="#__codelineno-43-34"></a>  <span class="err">//</span> <span class="na">affichage</span> <span class="na">tableau</span>
+<a id="__codelineno-43-35" name="__codelineno-43-35" href="#__codelineno-43-35"></a>  <span class="na">for</span><span class="err">(</span><span class="na">i</span><span class="o">=</span><span class="s">0;i&lt;tableau.length;i++){</span>
+<a id="__codelineno-43-36" name="__codelineno-43-36" href="#__codelineno-43-36"></a>    <span class="na">WScript</span><span class="err">.</span><span class="na">echo</span><span class="err">(&quot;</span><span class="na">tableau</span><span class="err">[&quot;</span> <span class="err">+</span> <span class="na">i</span> <span class="err">+</span> <span class="err">&quot;]=&quot;</span> <span class="err">+</span> <span class="na">tableau</span><span class="err">[</span><span class="na">i</span><span class="err">]);</span>
+<a id="__codelineno-43-37" name="__codelineno-43-37" href="#__codelineno-43-37"></a>  <span class="err">}//</span><span class="na">for</span>
+<a id="__codelineno-43-38" name="__codelineno-43-38" href="#__codelineno-43-38"></a><span class="err">}//</span><span class="na">function</span>
+<a id="__codelineno-43-39" name="__codelineno-43-39" href="#__codelineno-43-39"></a>
+<a id="__codelineno-43-40" name="__codelineno-43-40" href="#__codelineno-43-40"></a><span class="err">//</span> <span class="na">---------------------------------------------------------</span>
+<a id="__codelineno-43-41" name="__codelineno-43-41" href="#__codelineno-43-41"></a><span class="na">function</span> <span class="na">affiche2</span><span class="err">(</span><span class="na">tableau</span><span class="err">){</span>
+<a id="__codelineno-43-42" name="__codelineno-43-42" href="#__codelineno-43-42"></a>  <span class="err">//</span> <span class="na">affichage</span> <span class="na">tableau</span>
+<a id="__codelineno-43-43" name="__codelineno-43-43" href="#__codelineno-43-43"></a>  <span class="na">for</span><span class="err">(</span><span class="na">i</span><span class="o">=</span><span class="s">0;i&lt;tableau.length;i++){</span>
+<a id="__codelineno-43-44" name="__codelineno-43-44" href="#__codelineno-43-44"></a>    <span class="na">for</span><span class="err">(</span><span class="na">j</span><span class="o">=</span><span class="s">0;j&lt;tableau[i].length;j++){</span>
+<a id="__codelineno-43-45" name="__codelineno-43-45" href="#__codelineno-43-45"></a>      <span class="na">WScript</span><span class="err">.</span><span class="na">echo</span><span class="err">(&quot;</span><span class="na">tableau</span><span class="err">[&quot;</span> <span class="err">+</span> <span class="na">i</span> <span class="err">+</span> <span class="err">&quot;,&quot;</span> <span class="err">+</span> <span class="na">j</span> <span class="err">+</span> <span class="err">&quot;]=&quot;</span> <span class="err">+</span> <span class="na">tableau</span><span class="err">[</span><span class="na">i</span><span class="err">][</span><span class="na">j</span><span class="err">]);</span>
+<a id="__codelineno-43-46" name="__codelineno-43-46" href="#__codelineno-43-46"></a>    <span class="err">}//</span> <span class="na">for</span> <span class="na">j</span>
+<a id="__codelineno-43-47" name="__codelineno-43-47" href="#__codelineno-43-47"></a>  <span class="err">}//</span><span class="na">for</span> <span class="na">i</span>
+<a id="__codelineno-43-48" name="__codelineno-43-48" href="#__codelineno-43-48"></a><span class="err">}//</span><span class="na">function</span>
+</code></pre></div>
+<p>Este programa utiliza matrizes. Vamos chamá-lo de <em>arrays.js</em> (a extensão .js indica um ficheiro JavaScript). Navegue até ao diretório onde ele está localizado e execute-o:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>dos&gt;cscript tableaux.js
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>Microsoft (R) Windows Script Host Version 5.6
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>Copyright (C) Microsoft Corporation 1996-2001. Tous droits réservés.
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>
+<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>tableau[0]=0
+<a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a>tableau[1]=10
+<a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a>tableau[2]=20
+<a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a>tableau[0]=0
+<a id="__codelineno-44-9" name="__codelineno-44-9" href="#__codelineno-44-9"></a>tableau[1]=10
+<a id="__codelineno-44-10" name="__codelineno-44-10" href="#__codelineno-44-10"></a>tableau[2]=20
+<a id="__codelineno-44-11" name="__codelineno-44-11" href="#__codelineno-44-11"></a>tableau[3]=30
+<a id="__codelineno-44-12" name="__codelineno-44-12" href="#__codelineno-44-12"></a>tableau[4]=40
+<a id="__codelineno-44-13" name="__codelineno-44-13" href="#__codelineno-44-13"></a>tableau[5]=50
+<a id="__codelineno-44-14" name="__codelineno-44-14" href="#__codelineno-44-14"></a>-----------------------------
+<a id="__codelineno-44-15" name="__codelineno-44-15" href="#__codelineno-44-15"></a>tableau[0,0]=0
+<a id="__codelineno-44-16" name="__codelineno-44-16" href="#__codelineno-44-16"></a>tableau[0,1]=1
+<a id="__codelineno-44-17" name="__codelineno-44-17" href="#__codelineno-44-17"></a>tableau[0,2]=2
+<a id="__codelineno-44-18" name="__codelineno-44-18" href="#__codelineno-44-18"></a>tableau[0,3]=3
+<a id="__codelineno-44-19" name="__codelineno-44-19" href="#__codelineno-44-19"></a>tableau[1,0]=10
+<a id="__codelineno-44-20" name="__codelineno-44-20" href="#__codelineno-44-20"></a>tableau[1,1]=11
+<a id="__codelineno-44-21" name="__codelineno-44-21" href="#__codelineno-44-21"></a>tableau[1,2]=12
+<a id="__codelineno-44-22" name="__codelineno-44-22" href="#__codelineno-44-22"></a>tableau[1,3]=13
+<a id="__codelineno-44-23" name="__codelineno-44-23" href="#__codelineno-44-23"></a>tableau[2,0]=20
+<a id="__codelineno-44-24" name="__codelineno-44-24" href="#__codelineno-44-24"></a>tableau[2,1]=21
+<a id="__codelineno-44-25" name="__codelineno-44-25" href="#__codelineno-44-25"></a>tableau[2,2]=22
+<a id="__codelineno-44-26" name="__codelineno-44-26" href="#__codelineno-44-26"></a>tableau[2,3]=23
+</code></pre></div>
+<p>Um último exemplo em PerlScript para terminar. É necessário ter o Active Perl instalado para aceder ao PerlScript.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>&lt;job id=&quot;PERL1&quot;&gt;
+<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>  &lt;script language=&quot;PerlScript&quot;&gt;
+<a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>      # du Perl classique
+<a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a>    %dico=(&quot;maurice&quot;=&gt;&quot;juliette&quot;,&quot;philippe&quot;=&gt;&quot;marianne&quot;);
+<a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a>    <span class="ni">@cles</span>= keys %dico;
+<a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a>    for ($i=0;$i&lt;=$#cles;$i++){
+<a id="__codelineno-45-7" name="__codelineno-45-7" href="#__codelineno-45-7"></a>        $cle=$cles[$i];
+<a id="__codelineno-45-8" name="__codelineno-45-8" href="#__codelineno-45-8"></a>      $valeur=$dico{$cle};
+<a id="__codelineno-45-9" name="__codelineno-45-9" href="#__codelineno-45-9"></a>        $WScript-&gt;echo (&quot;clé=&quot;.$cle.&quot;, valeur=&quot;.$valeur);
+<a id="__codelineno-45-10" name="__codelineno-45-10" href="#__codelineno-45-10"></a>    }
+<a id="__codelineno-45-11" name="__codelineno-45-11" href="#__codelineno-45-11"></a>    # du perlscript utilisant les objets Windows Script
+<a id="__codelineno-45-12" name="__codelineno-45-12" href="#__codelineno-45-12"></a>    $dico=$WScript-&gt;CreateObject(&quot;Scripting.Dictionary&quot;);
+<a id="__codelineno-45-13" name="__codelineno-45-13" href="#__codelineno-45-13"></a>    $dico-&gt;add(&quot;maurice&quot;,&quot;juliette&quot;);
+<a id="__codelineno-45-14" name="__codelineno-45-14" href="#__codelineno-45-14"></a>    $dico-&gt;add(&quot;philippe&quot;,&quot;marianne&quot;);
+<a id="__codelineno-45-15" name="__codelineno-45-15" href="#__codelineno-45-15"></a>    $WScript-&gt;echo($dico-&gt;item(&quot;maurice&quot;));
+<a id="__codelineno-45-16" name="__codelineno-45-16" href="#__codelineno-45-16"></a>    $WScript-&gt;echo($dico-&gt;item(&quot;philippe&quot;));    
+<a id="__codelineno-45-17" name="__codelineno-45-17" href="#__codelineno-45-17"></a>  &lt;/script&gt;
+<a id="__codelineno-45-18" name="__codelineno-45-18" href="#__codelineno-45-18"></a>&lt;/job&gt;
+</code></pre></div>
+<p>Este programa demonstra a criação e utilização de dois dicionários: um no estilo clássico do Perl, o outro utilizando o objeto Windows Script <em>Scripting Dictionary</em>. Vamos guardar este código no ficheiro <em>dico.wsf</em> (wsf é a extensão de ficheiro para ficheiros Windows Script). Navegue até à pasta do programa e execute-o:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>dos&gt;cscript dico.wsf
+<a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>Microsoft (R) Windows Script Host Version 5.6
+<a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a>Copyright (C) Microsoft Corporation 1996-2001. Tous droits réservés.
+<a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a>
+<a id="__codelineno-46-5" name="__codelineno-46-5" href="#__codelineno-46-5"></a>clé=philippe, valeur=marianne
+<a id="__codelineno-46-6" name="__codelineno-46-6" href="#__codelineno-46-6"></a>clé=maurice, valeur=juliette
+<a id="__codelineno-46-7" name="__codelineno-46-7" href="#__codelineno-46-7"></a>juliette
+<a id="__codelineno-46-8" name="__codelineno-46-8" href="#__codelineno-46-8"></a>marianne
+</code></pre></div>
+<p>O PerlScript pode aceder a objetos do contentor no qual é executado. Neste caso, tratava-se de objetos do contentor do Windows Script. No contexto da programação web, os scripts VBScript, JavaScript e PerlScript podem ser executados tanto no navegador IE como num servidor PWS ou IIS. Se o script for um pouco complexo, pode ser sensato testá-lo fora do contexto web, dentro do contentor do Windows Script, tal como discutido anteriormente. Desta forma, só é possível testar as funções do script que não utilizam objetos específicos do navegador ou do servidor. Mesmo com esta limitação, esta abordagem continua a ser útil, uma vez que a depuração de scripts em execução em servidores web ou navegadores é, geralmente, bastante impraticável.</p>
+<p><a id="toc67828570"></a>
+<a id="toc57014801"></a>
+<a id="toc18463286"></a>
+<a id="toc14772381"></a></p>
+<h2 id="107-java">10.7. JAVA</h2>
+<p>O Java está disponível no URL: <strong>http://www.sun.com</strong> <strong>e</strong> é instalado numa estrutura de diretórios chamada <strong>&lt;java&gt;</strong> que contém os seguintes elementos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>22/05/2002  05:51       &lt;DIR&gt;          .
+<a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a>22/05/2002  05:51       &lt;DIR&gt;          ..
+<a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a>22/05/2002  05:51       &lt;DIR&gt;          bin
+<a id="__codelineno-47-4" name="__codelineno-47-4" href="#__codelineno-47-4"></a>22/05/2002  05:51       &lt;DIR&gt;          jre
+<a id="__codelineno-47-5" name="__codelineno-47-5" href="#__codelineno-47-5"></a>07/02/2002  12:52                8 277 README.txt
+<a id="__codelineno-47-6" name="__codelineno-47-6" href="#__codelineno-47-6"></a>07/02/2002  12:52               13 853 LICENSE
+<a id="__codelineno-47-7" name="__codelineno-47-7" href="#__codelineno-47-7"></a>07/02/2002  12:52                4 516 COPYRIGHT
+<a id="__codelineno-47-8" name="__codelineno-47-8" href="#__codelineno-47-8"></a>07/02/2002  12:52               15 290 readme.html
+<a id="__codelineno-47-9" name="__codelineno-47-9" href="#__codelineno-47-9"></a>22/05/2002  05:51       &lt;DIR&gt;          lib
+<a id="__codelineno-47-10" name="__codelineno-47-10" href="#__codelineno-47-10"></a>22/05/2002  05:51       &lt;DIR&gt;          include
+<a id="__codelineno-47-11" name="__codelineno-47-11" href="#__codelineno-47-11"></a>22/05/2002  05:51       &lt;DIR&gt;          demo
+<a id="__codelineno-47-12" name="__codelineno-47-12" href="#__codelineno-47-12"></a>07/02/2002  12:52           10 377 848 src.zip
+<a id="__codelineno-47-13" name="__codelineno-47-13" href="#__codelineno-47-13"></a>11/02/2002  12:55       &lt;DIR&gt;          docs
+</code></pre></div>
+<p>No <strong>diretório bin</strong>, encontrará <strong>o javac.exe</strong>, o compilador Java, e <strong>o java.exe,</strong> a Máquina Virtual Java. Pode realizar os seguintes testes:</p>
+<ol>
+  <li>Escreva o seguinte script:
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="c1">//java program displaying the time</span>
+<a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>
+<a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.*</span><span class="p">;</span>
+<a id="__codelineno-48-4" name="__codelineno-48-4" href="#__codelineno-48-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.*</span><span class="p">;</span>
+<a id="__codelineno-48-5" name="__codelineno-48-5" href="#__codelineno-48-5"></a>
+<a id="__codelineno-48-6" name="__codelineno-48-6" href="#__codelineno-48-6"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">heure</span><span class="p">{</span>
+<a id="__codelineno-48-7" name="__codelineno-48-7" href="#__codelineno-48-7"></a><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">arg</span><span class="o">[]</span><span class="p">){</span>
+<a id="__codelineno-48-8" name="__codelineno-48-8" href="#__codelineno-48-8"></a><span class="w">     </span><span class="c1">// retrieve date &amp; time</span>
+<a id="__codelineno-48-9" name="__codelineno-48-9" href="#__codelineno-48-9"></a><span class="w">     </span><span class="n">Date</span><span class="w"> </span><span class="n">maintenant</span><span class="o">=</span><span class="k">new</span><span class="w"> </span><span class="n">Date</span><span class="p">();</span>
+<a id="__codelineno-48-10" name="__codelineno-48-10" href="#__codelineno-48-10"></a><span class="w">      </span><span class="c1">// we display</span>
+<a id="__codelineno-48-11" name="__codelineno-48-11" href="#__codelineno-48-11"></a><span class="w">     </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Il est &quot;</span><span class="o">+</span><span class="n">maintenant</span><span class="p">.</span><span class="na">getHours</span><span class="p">()</span><span class="o">+</span>
+<a id="__codelineno-48-12" name="__codelineno-48-12" href="#__codelineno-48-12"></a><span class="w">        </span><span class="s">&quot;:&quot;</span><span class="o">+</span><span class="n">maintenant</span><span class="p">.</span><span class="na">getMinutes</span><span class="p">()</span><span class="o">+</span><span class="s">&quot;:&quot;</span><span class="o">+</span><span class="n">maintenant</span><span class="p">.</span><span class="na">getSeconds</span><span class="p">());</span>
+<a id="__codelineno-48-13" name="__codelineno-48-13" href="#__codelineno-48-13"></a><span class="w">  </span><span class="p">}</span><span class="c1">//hand</span>
+<a id="__codelineno-48-14" name="__codelineno-48-14" href="#__codelineno-48-14"></a><span class="p">}</span><span class="c1">//class</span>
+</code></pre></div>
+<ol>
+  <li>Guarde este programa como <i>heure.java</i>. Abra uma janela do DOS. Navegue até ao diretório que contém o ficheiro<i> heure.java </i>e compile-o:
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>dos&gt;c:\jdk1.3\bin\javac heure.java
+<a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a>Note: heure.java uses or overrides a deprecated API.
+<a id="__codelineno-49-3" name="__codelineno-49-3" href="#__codelineno-49-3"></a>Note: Recompile with -deprecation for details.
+</code></pre></div>
+<p>No comando acima, [c:\jdk1.3\bin\javac] deve ser substituído pelo caminho exato para o compilador <em>javac.exe</em>. Deve obter um ficheiro chamado <em>heure.class</em> no mesmo diretório que <em>o heure.java</em>; este é o programa que agora será executado pela máquina virtual <em>java.exe</em>.</p>
+<ol>
+  <li>Execute o programa:
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>dos&gt;c:\jdk1.3\bin\java heure
+<a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a>Il est 10:44:2
+</code></pre></div>
+<p>No comando acima, [c:\jdk1.3\bin\java] deve ser substituído pelo caminho exato para a máquina virtual Java [java.exe]. </p>
+<p><a id="toc67828571"></a>
+<a id="toc57014802"></a>
+<a id="toc18463287"></a>
+<a id="toc14772382"></a></p>
+<h2 id="108-servidor-apache">10.8. Servidor Apache</h2>
+<p>Vimos que o servidor Apache pode ser obtido com a aplicação EasyPHP. Para o obter diretamente, aceda ao site do Apache: <strong>http://www.apache.org.</strong> A instalação cria uma estrutura de diretórios contendo todos os ficheiros necessários para o servidor. Vamos chamar a este diretório <strong><em>&lt;apache&gt;</em></strong>. Ele contém uma estrutura de diretórios semelhante à seguinte:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>UNINST   ISU       118 805  23/06/00  17:09 Uninst.isu
+<a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a>HTDOCS         &lt;REP&gt;        23/06/00  17:09 htdocs
+<a id="__codelineno-51-3" name="__codelineno-51-3" href="#__codelineno-51-3"></a>APACHE~1 DLL       299 008  25/02/00  21:11 ApacheCore.dll
+<a id="__codelineno-51-4" name="__codelineno-51-4" href="#__codelineno-51-4"></a>ANNOUN~1             3 000  23/02/00  16:51 Announcement
+<a id="__codelineno-51-5" name="__codelineno-51-5" href="#__codelineno-51-5"></a>ABOUT_~1            13 197  31/03/99  18:42 ABOUT_APACHE
+<a id="__codelineno-51-6" name="__codelineno-51-6" href="#__codelineno-51-6"></a>APACHE   EXE        20 480  25/02/00  21:04 Apache.exe
+<a id="__codelineno-51-7" name="__codelineno-51-7" href="#__codelineno-51-7"></a>KEYS                36 437  20/08/99  11:57 KEYS
+<a id="__codelineno-51-8" name="__codelineno-51-8" href="#__codelineno-51-8"></a>LICENSE              2 907  01/01/99  13:04 LICENSE
+<a id="__codelineno-51-9" name="__codelineno-51-9" href="#__codelineno-51-9"></a>MAKEFI~1 TMP        27 370  11/01/00  13:47 Makefile.tmpl
+<a id="__codelineno-51-10" name="__codelineno-51-10" href="#__codelineno-51-10"></a>README               2 109  01/04/98   6:59 README
+<a id="__codelineno-51-11" name="__codelineno-51-11" href="#__codelineno-51-11"></a>README   NT          3 223  19/03/99   9:55 README.NT
+<a id="__codelineno-51-12" name="__codelineno-51-12" href="#__codelineno-51-12"></a>WARNIN~1 TXT           339  21/09/98  13:09 WARNING-NT.TXT
+<a id="__codelineno-51-13" name="__codelineno-51-13" href="#__codelineno-51-13"></a>BIN            &lt;REP&gt;        23/06/00  17:09 bin
+<a id="__codelineno-51-14" name="__codelineno-51-14" href="#__codelineno-51-14"></a>MODULES        &lt;REP&gt;        23/06/00  17:09 modules
+<a id="__codelineno-51-15" name="__codelineno-51-15" href="#__codelineno-51-15"></a>ICONS          &lt;REP&gt;        23/06/00  17:09 icons
+<a id="__codelineno-51-16" name="__codelineno-51-16" href="#__codelineno-51-16"></a>LOGS           &lt;REP&gt;        23/06/00  17:09 logs
+<a id="__codelineno-51-17" name="__codelineno-51-17" href="#__codelineno-51-17"></a>CONF           &lt;REP&gt;        23/06/00  17:09 conf
+<a id="__codelineno-51-18" name="__codelineno-51-18" href="#__codelineno-51-18"></a>CGI-BIN        &lt;REP&gt;        23/06/00  17:09 cgi-bin
+<a id="__codelineno-51-19" name="__codelineno-51-19" href="#__codelineno-51-19"></a>PROXY          &lt;REP&gt;        23/06/00  17:09 proxy
+<a id="__codelineno-51-20" name="__codelineno-51-20" href="#__codelineno-51-20"></a>INSTALL  LOG         3 779  23/06/00  17:09 install.log
+</code></pre></div>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>conf
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Diretório de ficheiros de configuração do Apache</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>logs
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Diretório de ficheiros de registo do Apache (monitorização)</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>bin
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Executáveis do Apache</div></td></tr></table>
+
+<p><a id="toc67828572"></a>
+<a id="toc57014803"></a>
+<a id="toc18463288"></a>
+<a id="toc14772383"></a></p>
+<h3 id="1081-configuracao">10.8.1. Configuração</h3>
+<p>No diretório <strong><em>&lt;Apache&gt;\conf</em></strong>, encontrará os seguintes ficheiros: <em>httpd.conf, srm.conf, access.conf</em>. Nas versões mais recentes do Apache, estes três ficheiros foram combinados no <em>httpd.conf</em>. Já abordámos os pontos-chave deste ficheiro de configuração. Nos exemplos seguintes, foi utilizada a versão Apache do EasyPHP para testes e, por conseguinte, o seu ficheiro de configuração. Neste ficheiro, <em>DocumentRoot,</em> que designa a raiz da árvore de diretórios da página web, é <em>e:\program files\easyphp\www</em>.</p>
+<p><a id="toc67828573"></a>
+<a id="toc57014804"></a>
+<a id="toc18463289"></a>
+<a id="toc14772384"></a></p>
+<h3 id="1082-php-ligacao-apache">10.8.2. PHP - Ligação Apache</h3>
+<p>Para testar, crie o ficheiro <strong>intro.php</strong> com a seguinte linha única:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>&lt;? phpinfo() ?&gt;
+</code></pre></div>
+<p>e coloque-o no diretório raiz do servidor Apache (<em>DocumentRoot</em> acima). Aceda à URL <strong>http://localhost/intro.php</strong>. Deverá ver uma lista de informações <em>PHP</em>:</p>
+<p><img src="images/100000000000028900000172D6AA302A.png" width="649" height="370" style="width:17.171cm;height:9.79cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000028900000172D6AA302A.png" /></p>
+<p>O seguinte script PHP exibe a hora. Já o vimos anteriormente:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>&lt;?
+<a id="__codelineno-56-2" name="__codelineno-56-2" href="#__codelineno-56-2"></a>  // time : nb de millisecondes depuis 01/01/1970
+<a id="__codelineno-56-3" name="__codelineno-56-3" href="#__codelineno-56-3"></a>  // &quot;format affichage date-heure
+<a id="__codelineno-56-4" name="__codelineno-56-4" href="#__codelineno-56-4"></a>  // d: jour sur 2 chiffres
+<a id="__codelineno-56-5" name="__codelineno-56-5" href="#__codelineno-56-5"></a>  // m: mois sur 2 chiffres
+<a id="__codelineno-56-6" name="__codelineno-56-6" href="#__codelineno-56-6"></a>  // y : année sur 2 chiffres
+<a id="__codelineno-56-7" name="__codelineno-56-7" href="#__codelineno-56-7"></a>  // H : heure 0,23
+<a id="__codelineno-56-8" name="__codelineno-56-8" href="#__codelineno-56-8"></a>  // i : minutes
+<a id="__codelineno-56-9" name="__codelineno-56-9" href="#__codelineno-56-9"></a>  // s: secondes
+<a id="__codelineno-56-10" name="__codelineno-56-10" href="#__codelineno-56-10"></a>  print &quot;Nous sommes le &quot; . date(&quot;d/m/y H:i:s&quot;,time());
+<a id="__codelineno-56-11" name="__codelineno-56-11" href="#__codelineno-56-11"></a>?&gt;
+</code></pre></div>
+<p>Coloque este ficheiro de texto no diretório raiz do servidor Apache (<em>DocumentRoot</em>) e nomeie-o date<em>.php</em>. Abra um navegador e introduza o URL <strong>http://localhost/date.php</strong>. Verá a seguinte página:</p>
+<p><img src="images/10000000000000FF0000004C3C348E29.png" width="255" height="76" style="width:6.747cm;height:2.011cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000FF0000004C3C348E29.png" /></p>
+<p><a id="toc67828574"></a>
+<a id="toc57014805"></a>
+<a id="toc18463290"></a>
+<a id="toc14772385"></a></p>
+<h3 id="1083-ligacao-perl-apache">10.8.3. Ligação PERL-APACHE</h3>
+<p>Isto é conseguido utilizando uma linha do tipo: <em>ScriptAlias /cgi-bin/ &quot;E:/Program Files/EasyPHP/cgi-bin/&quot;</em> no ficheiro <strong>&lt;apache&gt;\conf\httpd.conf</strong>. A sua sintaxe é     <strong><mark style="background-color: #ffe994">ScriptAlias /cgi-bin/ &quot;&lt;cgi-bin&gt;&quot;, </mark></strong>em que <strong>&lt;cgi-bin&gt;</strong> é a pasta onde os scripts CGI podem ser colocados. CGI (Common Gateway Interface) é um padrão para a comunicação entre o servidor web e as aplicações. Um cliente solicita uma página dinâmica ao servidor web, ou seja, uma página gerada por um programa. O servidor web deve, portanto, instruir um programa para gerar a página. O CGI define a interação entre o servidor e o programa, especificamente como a informação é transmitida entre estas duas entidades. Se necessário, modifique a linha <strong><em><code>ScriptAlias /cgi-bin/ &amp;quot;&amp;lt;cgi-bin&amp;gt;&amp;quot;</code></em></strong> e reinicie o servidor Apache. Em seguida, execute o seguinte teste:</p>
+<ol>
+  <li>Escreva o script:
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a>#!c:\perl\bin\perl.exe
+<a id="__codelineno-57-2" name="__codelineno-57-2" href="#__codelineno-57-2"></a>
+<a id="__codelineno-57-3" name="__codelineno-57-3" href="#__codelineno-57-3"></a># script PERL affichant l&#39;heure
+<a id="__codelineno-57-4" name="__codelineno-57-4" href="#__codelineno-57-4"></a>
+<a id="__codelineno-57-5" name="__codelineno-57-5" href="#__codelineno-57-5"></a># modules
+<a id="__codelineno-57-6" name="__codelineno-57-6" href="#__codelineno-57-6"></a>use strict;
+<a id="__codelineno-57-7" name="__codelineno-57-7" href="#__codelineno-57-7"></a>
+<a id="__codelineno-57-8" name="__codelineno-57-8" href="#__codelineno-57-8"></a># programme
+<a id="__codelineno-57-9" name="__codelineno-57-9" href="#__codelineno-57-9"></a>my ($secondes,$minutes,$heure)=localtime(time);
+<a id="__codelineno-57-10" name="__codelineno-57-10" href="#__codelineno-57-10"></a>print <span class="err">&lt;</span><span class="p">&lt;</span><span class="nt">FINHTML</span>
+<a id="__codelineno-57-11" name="__codelineno-57-11" href="#__codelineno-57-11"></a><span class="na">Content-Type:</span> <span class="na">text</span><span class="err">/</span><span class="na">html</span>
+<a id="__codelineno-57-12" name="__codelineno-57-12" href="#__codelineno-57-12"></a>
+<a id="__codelineno-57-13" name="__codelineno-57-13" href="#__codelineno-57-13"></a><span class="err">&lt;</span><span class="na">html</span><span class="p">&gt;</span>
+<a id="__codelineno-57-14" name="__codelineno-57-14" href="#__codelineno-57-14"></a> <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-57-15" name="__codelineno-57-15" href="#__codelineno-57-15"></a>  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>heure<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-57-16" name="__codelineno-57-16" href="#__codelineno-57-16"></a> <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-57-17" name="__codelineno-57-17" href="#__codelineno-57-17"></a> <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-57-18" name="__codelineno-57-18" href="#__codelineno-57-18"></a>  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Il est $heure:$minutes:$secondes<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-57-19" name="__codelineno-57-19" href="#__codelineno-57-19"></a> <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-57-20" name="__codelineno-57-20" href="#__codelineno-57-20"></a>FINHTML
+<a id="__codelineno-57-21" name="__codelineno-57-21" href="#__codelineno-57-21"></a>;
+</code></pre></div>
+<ol>
+  <li>Coloque este script em <i>&lt;cgi-bin&gt;\heure.pl, </i>onde <i>&lt;cgi-bin&gt; </i>é o diretório que pode receber scripts CGI (consulte <i>httpd.conf</i>). A primeira linha, <i>#!c:\perl\bin\perl.exe, </i>especifica o caminho para <i>o </i>executável<i> perl.exe</i>. Modifique-o, se necessário.
+  </li>
+  <li>Inicie o Apache, caso ainda não o tenha feito
+  </li>
+  <li>Aceda ao URL<i> http://localhost/cgi-bin/heure.pl </i>num navegador. Verá a seguinte página:
+  </li>
+</ol>
+
+<p><img src="images/10000000000000E90000005AE3481F09.png" width="233" height="90" style="width:6.165cm;height:2.381cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000E90000005AE3481F09.png" /></p>
+<p><a id="toc67828575"></a>
+<a id="toc57014806"></a>
+<a id="toc18463291"></a>
+<a id="toc14772386"></a></p>
+<h2 id="109-o-servidor-pws">10.9. O servidor PWS</h2>
+<p><a id="toc67828576"></a>
+<a id="toc57014807"></a>
+<a id="toc18463292"></a>
+<a id="toc14772387"></a></p>
+<h3 id="1091-instalacao">10.9.1. Instalação</h3>
+<p>O PWS (Personal Web Server) é uma versão pessoal do IIS (Internet Information Server) da Microsoft. O IIS está disponível em máquinas NT e 2000. Em máquinas com Win9x, o PWS está normalmente incluído no pacote de instalação do Internet Explorer. No entanto, não é instalado por predefinição. Deve realizar uma instalação personalizada do IE e solicitar a instalação do PWS. Também está disponível no <strong><em>NT 4.0 Option Pack para Windows 95</em></strong><strong>.</strong></p>
+<p><a id="toc67828577"></a>
+<a id="toc57014808"></a>
+<a id="toc18463293"></a>
+<a id="toc14772388"></a></p>
+<h3 id="1092-testes-iniciais">10.9.2. Testes iniciais</h3>
+<p>O diretório raiz das páginas web do PWS é <em>drive:\inetpub\wwwroot</em><em>, em que</em> <em>drive</em> <em>é a unidade em que instalou o PWS.</em> Passaremos a assumir que essa unidade é a D. Assim, o URL <em>http://machine/rep1/page1.html</em> corresponde ao ficheiro <em>d:\inetpub\wwwroot\rep1\page1.html</em>. O servidor PWS interpreta qualquer ficheiro com a extensão <strong>.asp</strong> (Active Server Pages) como um script que deve executar para gerar uma página HTML. O PWS funciona na porta 80 por predefinição. O servidor web Apache também... Por isso, deve parar o Apache para trabalhar com o PWS se tiver ambos os servidores. A outra solução é configurar o Apache para funcionar numa porta diferente. Assim, no ficheiro de configuração do Apache [httpd.conf], substitua a linha <mark style="background-color: #ffe994">Port 80 </mark>por <mark style="background-color: #ffe994">Port 81</mark>; o Apache passará a funcionar na porta 81 e poderá ser utilizado em simultâneo com o PWS. Se o PWS tiver sido iniciado e solicitar a URL http://localhost, obterá uma página semelhante à seguinte:</p>
+<p><img src="images/10000000000001F3000000D2F165A6EC.png" width="499" height="210" style="width:13.203cm;height:5.556cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F3000000D2F165A6EC.png" /></p>
+<p><a id="toc67828578"></a>
+<a id="toc57014809"></a>
+<a id="toc18463294"></a>
+<a id="toc14772389"></a></p>
+<h3 id="1093-php-ligacao-pws">10.9.3. PHP - Ligação PWS</h3>
+<ol>
+  <li>Abaixo encontra-se um ficheiro<b> .reg </b>para modificar o registo. Clique duas vezes neste ficheiro para modificar o registo. Aqui, a <i>DLL</i> necessária está localizada em <i>d:\php4 </i>juntamente com o executável do PHP. Modifique conforme necessário. As barras invertidas (\) devem ser duplicadas no caminho da DLL.
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>REGEDIT4
+<a id="__codelineno-58-2" name="__codelineno-58-2" href="#__codelineno-58-2"></a>
+<a id="__codelineno-58-3" name="__codelineno-58-3" href="#__codelineno-58-3"></a>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\w3svc\parameters\Script Map]
+<a id="__codelineno-58-4" name="__codelineno-58-4" href="#__codelineno-58-4"></a>&quot;.php&quot;=&quot;d:\\php4\\php4isapi.dll&quot;
+</code></pre></div>
+<ol>
+  <li>Reinicie o computador para que a alteração no registo entre em vigor.
+  </li>
+</ol>
+
+<ol>
+  <li>Crie uma pasta <b>&quot;php&quot; </b>em <i>d:\inetpub\wwwroot</i>, que é a raiz do servidor PWS. Depois de concluído, abra o PWS e vá para o separador &quot;Avançado&quot;. Clique no botão &quot;Adicionar&quot; para criar um diretório virtual:
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>Répertoire/Parcourir : d:\inetpub\wwwroot\php
+<a id="__codelineno-59-2" name="__codelineno-59-2" href="#__codelineno-59-2"></a>Alias : php
+<a id="__codelineno-59-3" name="__codelineno-59-3" href="#__codelineno-59-3"></a>Cocher la case exécuter.
+</code></pre></div>
+<ol>
+  <li>Confirme as definições e reinicie o PWS. Coloque o ficheiro <b>intro.php </b>em <i>d:\inetpub\wwwroot\php</i><b>, </b>contendo apenas a seguinte linha:
+  </li>
+</ol>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a>&lt;? phpinfo() ?&gt;
+</code></pre></div>
+<ol>
+  <li>Aceda ao URL<i> http://localhost/php/intro.php </i>a partir do servidor PWS. Deverá ver a lista de informações PHP já apresentada com o Apache.
+  </li>
+</ol>
+
+<p><a id="toc67828579"></a>
+<a id="toc57014810"></a>
+<a id="toc18463295"></a>
+<a id="toc14772390"></a></p>
+<h2 id="1010-tomcat-servlets-java-e-jsp-java-server-pages">10.10. Tomcat: Servlets Java e JSP (Java Server Pages)</h2>
+<p>O Tomcat é um servidor web que gera páginas HTML utilizando servlets (programas Java executados pelo servidor web) ou JSP (Java Server Pages), que combinam código Java com código HTML. É o equivalente ao ASP (Active Server Pages) no servidor IIS/PWS da Microsoft, onde o código VBScript ou JavaScript é combinado com código HTML.</p>
+<p><a id="toc67828580"></a>
+<a id="toc57014811"></a>
+<a id="toc18463296"></a>
+<a id="toc14772391"></a></p>
+<h3 id="10101-instalacao">10.10.1. Instalação</h3>
+<p>O Tomcat está disponível no URL: <strong>http://jakarta.apache.org.</strong>  Descarregue o ficheiro de instalação .exe. Quando executar este programa, ele solicita-lhe primeiro que selecione qual o JDK a utilizar. O Tomcat requer um JDK para instalar e, posteriormente, compilar e executar servlets Java. Deve, portanto, ter um JDK Java instalado antes de instalar o Tomcat. Recomenda-se o JDK mais recente. A instalação irá criar uma estrutura de diretórios &lt;tomcat&gt;:</p>
+<p><img src="images/10000000000000AC000000AA46B5972C.png" width="172" height="170" style="width:4.551cm;height:4.498cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000AC000000AA46B5972C.png" /></p>
+<p>basta extrair este arquivo para um diretório. Escolha um diretório cujo caminho contenha apenas nomes sem espaços (não, por exemplo, &quot;Arquivos de Programas&quot;), pois há um bug no processo de instalação do Tomcat. Use, por exemplo, C:\tomcat ou D:\tomcat. Vamos chamar este diretório <strong>de &lt;tomcat&gt;</strong>. Nele, encontrará uma pasta chamada <strong>jakarta-tomcat</strong>, que contém a seguinte estrutura de diretórios:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a>LOGS           &lt;REP&gt;        15/11/00   9:04 logs
+<a id="__codelineno-61-2" name="__codelineno-61-2" href="#__codelineno-61-2"></a>LICENSE              2 876  18/04/00  15:56 LICENSE
+<a id="__codelineno-61-3" name="__codelineno-61-3" href="#__codelineno-61-3"></a>CONF           &lt;REP&gt;        15/11/00   8:53 conf
+<a id="__codelineno-61-4" name="__codelineno-61-4" href="#__codelineno-61-4"></a>DOC            &lt;REP&gt;        15/11/00   8:53 doc
+<a id="__codelineno-61-5" name="__codelineno-61-5" href="#__codelineno-61-5"></a>LIB            &lt;REP&gt;        15/11/00   8:53 lib
+<a id="__codelineno-61-6" name="__codelineno-61-6" href="#__codelineno-61-6"></a>SRC            &lt;REP&gt;        15/11/00   8:53 src
+<a id="__codelineno-61-7" name="__codelineno-61-7" href="#__codelineno-61-7"></a>WEBAPPS        &lt;REP&gt;        15/11/00   8:53 webapps
+<a id="__codelineno-61-8" name="__codelineno-61-8" href="#__codelineno-61-8"></a>BIN            &lt;REP&gt;        15/11/00   8:53 bin
+<a id="__codelineno-61-9" name="__codelineno-61-9" href="#__codelineno-61-9"></a>WORK           &lt;REP&gt;        15/11/00   9:04 work
+</code></pre></div>
+<p><a id="toc67828581"></a>
+<a id="toc57014812"></a>
+<a id="toc18463297"></a>
+<a id="toc14772392"></a></p>
+<h3 id="10102-iniciarparar-o-servidor-web-tomcat">10.10.2. Iniciar/Parar o Servidor Web Tomcat</h3>
+<p>O Tomcat é um servidor Web, tal como o Apache ou o PWS. Para o iniciar, utilize as ligações no menu Programas:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a>Iniciar o Tomcat
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">para iniciar o Tomcat</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a>Parar o Tomcat
+</code></pre></div>
+</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">para o parar</div></td></tr></table>
+
+<p>Quando inicia o Tomcat, aparece uma janela do DOS com o seguinte conteúdo:</p>
+<p><img src="images/10000000000001300000006238751BC5.png" width="304" height="98" style="width:8.043cm;height:2.593cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001300000006238751BC5.png" /></p>
+<p>Pode minimizar esta janela do DOS. Ela permanecerá aberta enquanto o Tomcat estiver em execução. Pode então avançar para os primeiros testes. O servidor web Tomcat funciona na porta 8080. Assim que o Tomcat estiver em execução, abra um navegador web e introduza o URL <strong>http://localhost:8080</strong>. Deverá ver a seguinte página:</p>
+<p><img src="images/10000000000001930000011E74DBF1C6.png" width="403" height="286" style="width:10.663cm;height:7.567cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001930000011E74DBF1C6.png" /></p>
+<p>Siga o link <strong>Servlet Examples</strong>:</p>
+<p><img src="images/10000000000002750000009DD0BB5A7B.png" width="604" height="151" style="width:15.991cm;height:3.992cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002750000009DD0BB5A7B.png" /></p>
+<p>Clique no link <em>Execute</em> para <em>RequestParameters</em> e, em seguida, no link para <em>Source</em>. Terá uma primeira ideia do que é um servlet Java. Pode fazer o mesmo com os links nas páginas JSP.</p>
+<p>Para parar o Tomcat, use o link <em>«Stop Tomcat»</em> no menu «Programs».</p>
+<p><a id="toc67828582"></a>
+<a id="toc57014813"></a>
+<a id="toc18463298"></a>
+<a id="toc14772393"></a></p>
+<h2 id="1011-jbuilder">10.11. JBuilder</h2>
+<p>O JBuilder é um ambiente de desenvolvimento de aplicações Java. Para criar servlets Java sem interfaces gráficas, tal ambiente não é estritamente necessário. Um editor de texto e um JDK são suficientes. No entanto, o JBuilder oferece algumas vantagens em relação ao método anterior:</p>
+<ul>
+  <li>facilidade de depuração: o compilador destaca as linhas com erros num programa, e é fácil navegar até elas
+  </li>
+  <li>autocompletar código: ao utilizar um objeto Java, o JBuilder exibe uma lista das suas propriedades e métodos em linha. Isto é muito útil, dado que a maioria dos objetos Java tem inúmeras propriedades e métodos que são difíceis de memorizar.
+  </li>
+</ul>
+
+<p>O JBuilder pode ser encontrado em <strong>http://www.borland.com/jbuilder</strong><strong>. É necessário preencher um formulário para obter o software. Uma chave de ativação é enviada por e-mail. Para instalar o JBuilder 7, por exemplo, foram seguidos os seguintes passos:</strong></p>
+<ul>
+  <li><b>Foram descarregados três ficheiros ZIP: um para a aplicação, um para a documentação e um para os exemplos. Cada um destes ficheiros ZIP tem um link separado no site do JBuilder.</b>
+  </li>
+  <li><b>Primeiro, foi instalado o aplicativo, depois a documentação e, por fim, os exemplos</b>
+  </li>
+  <li><b>Quando inicia a aplicação pela primeira vez, é solicitada uma chave de ativação: esta é a que lhe foi enviada por e-mail. Na versão 7, esta chave é, na verdade, um ficheiro de texto completo que pode ser colocado, por exemplo, na pasta de instalação do JB7. Quando a chave é solicitada, deve então especificar o ficheiro em questão. Depois de feito isto, a chave não será solicitada novamente.</b>
+  </li>
+</ul>
+
+<p><strong>Existem algumas configurações úteis a definir se pretender utilizar o JBuilder para criar servlets Java. A chamada versão «Personal» do JBuilder é uma versão simplificada que não inclui todas as classes necessárias para o desenvolvimento web com Java. Pode configurar o JBuilder para utilizar as bibliotecas de classes fornecidas pelo Tomcat. Eis como:</strong></p>
+<ul>
+  <li><b>Inicie o JBuilder</b>
+  </li>
+</ul>
+
+<p><img src="images/1000000000000336000000C712E719CB.png" width="680" height="165" style="width:17.979cm;height:4.353cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000336000000C712E719CB.png" /></p>
+<ul>
+  <li><b>Ative a opção</b><i><b> Ferramentas/Configurar JDKs</b></i>
+  </li>
+</ul>
+
+<p><img src="images/1000000000000348000000FC3E5ED2E5.png" width="680" height="204" style="width:17.979cm;height:5.398cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000348000000FC3E5ED2E5.png" /></p>
+<p><strong>Na secção</strong> <strong><em>JDK Settings</em></strong> <strong>acima, o campo</strong> <strong><em>Name</em></strong> <strong>normalmente exibe &quot;JDK 1.3.1&quot;. Se tiver um JDK mais recente, utilize o botão</strong> <strong><em>Change</em></strong> <strong>para especificar o seu diretório de instalação. No exemplo acima, especificámos o diretório</strong> <strong><em>E:\Program Files\jdk14</em></strong><strong>, onde um JDK 1.4 foi instalado. A partir de agora, o JBuilder utilizará este JDK para as suas compilações e execuções. Na secção (Class, Source, Documentation), verá uma lista de todas as bibliotecas de classes que o JBuilder irá analisar — neste caso, as classes do JDK 1.4. As classes incluídas neste JDK não são suficientes para o desenvolvimento web em Java. Para adicionar outras bibliotecas de classes, utilize o botão</strong> <strong><em>Add</em></strong> <strong>e selecione os ficheiros</strong> <strong><em>.jar</em></strong> <strong>adicionais que pretende utilizar. Os ficheiros .jar são bibliotecas de classes. O Tomcat 4.x inclui todas as bibliotecas de classes necessárias para o desenvolvimento web. Estas encontram-se em</strong> <strong><em>&lt;tomcat&gt;\common\lib</em></strong><strong>, onde</strong> <strong><em>&lt;tomcat&gt;</em></strong> <strong>é o diretório de instalação do Tomcat:</strong></p>
+<p><img src="images/100000000000028D0000010D9D0A86D8.png" width="653" height="269" style="width:17.277cm;height:7.117cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000028D0000010D9D0A86D8.png" /></p>
+<p><strong>Usando o botão</strong> <strong><em>Adicionar</em></strong><strong>, vamos adicionar estas bibliotecas, uma a uma, à lista de bibliotecas analisadas pelo JBuilder:</strong></p>
+<p><img src="images/100000000000021700000114277D4A9F.png" width="535" height="276" style="width:14.155cm;height:7.303cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000021700000114277D4A9F.png" /></p>
+<p>A partir de agora, pode compilar programas Java em conformidade com a norma J2EE, incluindo servlets Java. O JBuilder é utilizado apenas para a compilação; a execução é posteriormente tratada pelo Tomcat de acordo com os procedimentos explicados no curso.</p>
+<p><a id="toc67828583"></a></p>
+<h2 id="1012-o-servidor-web-cassini">10.12. O servidor Web Cassini</h2>
+<p>Para trabalhar com a plataforma .NET da Microsoft, pode utilizar o servidor Web Cassini. Este está disponível através de outro produto chamado [WebMatrix], que é um ambiente de desenvolvimento Web gratuito para plataformas .NET, disponível no URL: </p>
+<p><img src="images/100000000000027700000130BF83E1F5.png" width="631" height="304" style="width:16.695cm;height:8.043cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000027700000130BF83E1F5.png" /></p>
+<p>Siga cuidadosamente o procedimento de instalação do produto:</p>
+<ul>
+  <li>descarregue e instale a plataforma .NET (1.1 a partir de março de 2004)
+  </li>
+  <li>descarregue e instale o WebMatrix
+  </li>
+  <li>Descarregue e instale o MSDE (Microsoft Data Engine), que é uma versão limitada do SQL Server.
+  </li>
+</ul>
+
+<p>Assim que a instalação estiver concluída, o produto [WebMatrix] estará disponível nos programas instalados:</p>
+<p><img src="images/1000000000000196000000573DB796C0.png" width="406" height="87" style="width:10.742cm;height:2.302cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000196000000573DB796C0.png" /></p>
+<p>O link [ASP.NET] do WebMatrix inicia o IDE de desenvolvimento ASP.NET:</p>
+<p><img src="images/100000000000022E00000197561B2721.png" width="558" height="407" style="width:14.764cm;height:10.769cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000022E00000197561B2721.png" /></p>
+<p>O link [Class Browser] abre uma ferramenta para explorar classes .NET:</p>
+<p><img src="images/1000000000000207000000C4C12F91AA.png" width="519" height="196" style="width:13.732cm;height:5.186cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000207000000C4C12F91AA.png" /></p>
+<p>Para testar a instalação, vamos abrir o [WebMatrix]:</p>
+<p><span style="color: #000000">1</span><span style="color: #000000">2</span><span style="color: #000000">3</span><span style="color: #000000">4</span></p>
+<p><img src="images/1000000000000207000001C06E62C4DC.png" width="519" height="448" style="width:13.732cm;height:11.853cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000207000001C06E62C4DC.png" /></p>
+<p>Ao iniciar o programa pela primeira vez, o [WebMatrix] solicita as especificações do novo projeto. Esta é a sua configuração predefinida. Pode configurá-lo para que esta caixa de diálogo não apareça no arranque. Pode então aceder a ela através da opção [Ficheiro/Novo Ficheiro]. O [WebMatrix] permite-lhe criar modelos para várias aplicações web. Acima, especificámos em (1) que queríamos criar uma aplicação [Página ASP.NET], que é uma página web. Em (2), especificamos a pasta onde esta página web será colocada. Em (3), introduzimos o nome da página. Deve ter a extensão .aspx. Por fim, em (4), especificamos que queremos trabalhar com a linguagem VB.NET; o [WebMatrix] também suporta as linguagens C# e J#.</p>
+<p>Depois de feito isto, o [WebMatrix] apresenta uma página de edição para o ficheiro [demo1.aspx]. Introduzimos aí o seguinte código:</p>
+<p><img src="images/100000000000012D00000079AF7637E9.png" width="301" height="121" style="width:7.964cm;height:3.201cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000012D00000079AF7637E9.png" /></p>
+<ul>
+  <li>O separador [Design] permite-lhe «desenhar» a página web que pretende criar. Funciona de forma semelhante a um IDE de desenvolvimento de aplicações Windows.
+  </li>
+  <li>O design gráfico da página web em [Design] irá gerar código HTML no separador [HTML]
+  </li>
+  <li>A página web pode conter controlos que geram eventos que requerem uma resposta, como um botão. Estes eventos serão tratados pelo código VB.NET colocado no separador [Code]
+  </li>
+  <li>Em última análise, o ficheiro demo1.aspx é um ficheiro de texto que combina código HTML e código VB.NET, resultante do design gráfico criado em [Design], do código HTML adicionado manualmente em [HTML] e do código VB.NET colocado em [Code]. O ficheiro completo está disponível no separador [All].
+  </li>
+  <li>Um programador ASP.NET experiente pode criar o ficheiro demo1.aspx diretamente utilizando um editor de texto, sem a ajuda de qualquer IDE.
+  </li>
+</ul>
+
+<p>Vamos selecionar a opção [All]. Podemos ver que o [WebMatrix] já gerou algum código:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="err">&lt;</span>%@ Page Language=&quot;VB&quot; %&gt;
+<a id="__codelineno-64-2" name="__codelineno-64-2" href="#__codelineno-64-2"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">runat</span><span class="o">=</span><span class="s">&quot;server&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-64-3" name="__codelineno-64-3" href="#__codelineno-64-3"></a>
+<a id="__codelineno-64-4" name="__codelineno-64-4" href="#__codelineno-64-4"></a><span class="w">    </span><span class="s1">&#39; Insert page code here</span>
+<a id="__codelineno-64-5" name="__codelineno-64-5" href="#__codelineno-64-5"></a><span class="s1">    &#39;</span>
+<a id="__codelineno-64-6" name="__codelineno-64-6" href="#__codelineno-64-6"></a>
+<a id="__codelineno-64-7" name="__codelineno-64-7" href="#__codelineno-64-7"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-64-8" name="__codelineno-64-8" href="#__codelineno-64-8"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-64-9" name="__codelineno-64-9" href="#__codelineno-64-9"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-64-10" name="__codelineno-64-10" href="#__codelineno-64-10"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-64-11" name="__codelineno-64-11" href="#__codelineno-64-11"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-64-12" name="__codelineno-64-12" href="#__codelineno-64-12"></a>    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">runat</span><span class="o">=</span><span class="s">&quot;server&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-64-13" name="__codelineno-64-13" href="#__codelineno-64-13"></a>        <span class="cm">&lt;!-- Insert content here --&gt;</span>
+<a id="__codelineno-64-14" name="__codelineno-64-14" href="#__codelineno-64-14"></a>    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<a id="__codelineno-64-15" name="__codelineno-64-15" href="#__codelineno-64-15"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-64-16" name="__codelineno-64-16" href="#__codelineno-64-16"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Não vamos tentar explicar este código aqui. Vamos transformá-lo da seguinte forma:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-65-2" name="__codelineno-65-2" href="#__codelineno-65-2"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-65-3" name="__codelineno-65-3" href="#__codelineno-65-3"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Démo asp.net <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-65-4" name="__codelineno-65-4" href="#__codelineno-65-4"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-65-5" name="__codelineno-65-5" href="#__codelineno-65-5"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-65-6" name="__codelineno-65-6" href="#__codelineno-65-6"></a>    Il est <span class="err">&lt;</span>% =Date.Now.ToString(&quot;hh:mm:ss&quot;) %&gt;
+<a id="__codelineno-65-7" name="__codelineno-65-7" href="#__codelineno-65-7"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-65-8" name="__codelineno-65-8" href="#__codelineno-65-8"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>O código acima é uma mistura de HTML e código VB.NET. Foi colocado dentro de tags &lt;% ... %&gt;. Para executar este código, utilizamos a opção [View/Start]. O [WebMatrix] inicia então o servidor web Cassini, caso este ainda não esteja a funcionar </p>
+<p><img src="images/10000000000001BE0000012C81C4137D.png" width="446" height="300" style="width:11.8cm;height:7.938cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001BE0000012C81C4137D.png" /></p>
+<p>Pode aceitar os valores predefinidos apresentados nesta caixa de diálogo e selecionar a opção [Iniciar]. O servidor web fica então ativo. O [WebMatrix] irá então iniciar o navegador predefinido no computador em que está a ser executado e solicitar o URL http://localhost:8080/demo1.aspx:</p>
+<p><img src="images/10000000000001D60000006273BDCF3F.png" width="470" height="98" style="width:12.435cm;height:2.593cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001D60000006273BDCF3F.png" /></p>
+<p>É possível utilizar o servidor Cassini fora do [WebMatrix]. O executável do servidor encontra-se em &lt;WebMatrix&gt;\&lt;versão&gt;\WebServer.exe, onde &lt;WebMatrix&gt; é o diretório de instalação do [WebMatrix] e &lt;versão&gt; é o seu número de versão:</p>
+<p><img src="images/10000000000001750000011B3CCCC791.png" width="373" height="283" style="width:9.869cm;height:7.488cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001750000011B3CCCC791.png" /></p>
+<p>Abra uma janela do Prompt de Comando e navegue até à pasta do servidor Cassini:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a>E:\Program Files\Microsoft ASP.NET Web Matrix\v0.6.812&gt;dir
+<a id="__codelineno-66-2" name="__codelineno-66-2" href="#__codelineno-66-2"></a>...
+<a id="__codelineno-66-3" name="__codelineno-66-3" href="#__codelineno-66-3"></a>29/05/2003  11:00               53 248 WebServer.exe
+<a id="__codelineno-66-4" name="__codelineno-66-4" href="#__codelineno-66-4"></a>...
+</code></pre></div>
+<p>Vamos executar o [WebServer.exe] sem quaisquer parâmetros:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a>E:\Program Files\Microsoft ASP.NET Web Matrix\v0.6.812&gt;webserver
+</code></pre></div>
+<p>Aparece uma janela de ajuda:</p>
+<p><img src="images/10000000000001E20000014D867BCBA8.png" width="482" height="333" style="width:12.753cm;height:8.811cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001E20000014D867BCBA8.png" /></p>
+<p>A aplicação [WebServer], também conhecida como servidor web Cassini, aceita três parâmetros:</p>
+<ul>
+  <li><b>/port</b>: número da porta do serviço web. Pode ser qualquer número. O valor padrão é 80
+  </li>
+  <li><b>/path</b>: o caminho físico para uma pasta no disco
+  </li>
+  <li><b>/vpath</b>: a pasta virtual associada à pasta física anterior. Note que a sintaxe não é /path=path, mas sim /vpath:path, ao contrário do que indica o painel de ajuda acima.
+  </li>
+</ul>
+
+<p>Vamos colocar o ficheiro [demo1.aspx] na seguinte pasta: </p>
+<p><img src="images/100000000000014A0000004F293092FD.png" width="330" height="79" style="width:8.731cm;height:2.09cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014A0000004F293092FD.png" /></p>
+<p>Vamos associar a pasta virtual [/webmatrix] à pasta física [d:\data\devel\webmatrix]. O servidor web pode ser iniciado da seguinte forma:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a>E:\Program Files\Microsoft ASP.NET Web Matrix\v0.6.812&gt;webserver /port:100 /path:&quot;d:\data\devel\webmatrix&quot; /vpath:&quot;/webmatrix&quot;
+</code></pre></div>
+<p>O servidor Cassini está agora ativo e o seu ícone aparece na barra de tarefas. Se clicar duas vezes nele:</p>
+<p><img src="images/10000000000001A8000000DF096B245B.png" width="424" height="223" style="width:11.218cm;height:5.9cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001A8000000DF096B245B.png" /></p>
+<p>Verá as definições de arranque do servidor. Também tem a opção de parar [Stop] ou reiniciar [Restart] o servidor web. Se clicar na ligação [Root URL], a raiz da árvore de diretórios web do servidor abrirá num navegador:</p>
+<p><img src="images/10000000000001C3000000E9014D2A3A.png" width="451" height="233" style="width:11.933cm;height:6.165cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001C3000000E9014D2A3A.png" /></p>
+<p>Siga o link [demos]:</p>
+<p><img src="images/10000000000001D6000000E22471000D.png" width="470" height="226" style="width:12.435cm;height:5.98cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001D6000000E22471000D.png" /></p>
+<p>depois o link [demo1.aspx]:</p>
+<p><img src="images/1000000000000219000000849C35A808.png" width="537" height="132" style="width:14.208cm;height:3.493cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000219000000849C35A808.png" /></p>
+<p>Podemos ver que, se a pasta física P=[d:\data\devel\webmatrix] tiver sido mapeada para a pasta virtual V=[/webmatrix] e o servidor estiver a funcionar na porta 100, a página web [demo1.aspx], que está fisicamente localizada em [P\demos], ficará acessível localmente através do URL [http://localhost:100/V/demos/demo1.aspx].</p>
+<p>Demonstrámos, neste caso específico, que o desenvolvimento web em ASP.NET pode ser feito utilizando um simples editor de texto para escrever páginas web e o servidor web Cassini para as testar. Isto é válido independentemente da complexidade da aplicação. O IDE [WebMatrix] oferece algumas facilidades de desenvolvimento, mas não muitas. Uma ferramenta como o Visual Studio.NET é muito mais poderosa, mas é um produto comercial.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
+        </a>
+        <br>
+        Este curso-tutorial escrito por <strong>Serge Tahé</strong> é disponibilizado ao público de acordo com os termos da
+        <em>Licença Creative Commons Atribuição – Sem uso comercial –
+        Partilha nas mesmas condições 3.0 não adaptada</em>.
+
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
